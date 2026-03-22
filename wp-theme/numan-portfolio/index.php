@@ -6,7 +6,10 @@
     <meta name="description" content="Numan Iftikhar - Senior Multi-Cloud DevOps Engineer | Kubernetes Architect | Terraform Expert">
     <meta name="keywords" content="DevOps Engineer, Cloud Architect, Kubernetes, Terraform, Azure, AWS, GCP">
     <meta name="author" content="Numan Iftikhar">
+    
     <?php wp_head(); ?>
+    
+    
 </head>
 <body <?php body_class(); ?>>
     <!-- Preloader -->
@@ -29,6 +32,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#book-call">Book a Call</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -76,7 +80,8 @@
                 <div class="hero-social animate-fade-up delay-5">
                     <a href="https://linkedin.com/in/numaniftikhar" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/numaniftikhar1088" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="mailto:me@numaniftikhar.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:hellonumaniftikhar@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://numaniftikhar.com" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-globe"></i></a>
                 </div>
             </div>
             <div class="hero-visual animate-fade-up delay-3">
@@ -160,7 +165,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <span class="info-label">Email</span>
-                                <span class="info-value">me@numaniftikhar.com</span>
+                                <span class="info-value">hellonumaniftikhar@gmail.com</span>
                             </div>
                         </div>
                         <div class="info-item">
@@ -206,6 +211,7 @@
                 <div class="section-line"></div>
             </div>
             <div class="skills-grid">
+                <!-- Cloud Platforms -->
                 <div class="skill-category">
                     <div class="skill-category-header">
                         <div class="skill-icon"><i class="fas fa-cloud"></i></div>
@@ -217,6 +223,7 @@
                         <span class="skill-tag gcp"><i class="fab fa-google"></i> Google Cloud</span>
                     </div>
                 </div>
+                <!-- Container & Orchestration -->
                 <div class="skill-category">
                     <div class="skill-category-header">
                         <div class="skill-icon"><i class="fas fa-cubes"></i></div>
@@ -232,6 +239,7 @@
                         <span class="skill-tag">Istio</span>
                     </div>
                 </div>
+                <!-- CI/CD & Automation -->
                 <div class="skill-category">
                     <div class="skill-category-header">
                         <div class="skill-icon"><i class="fas fa-rocket"></i></div>
@@ -246,6 +254,7 @@
                         <span class="skill-tag">Argo CD</span>
                     </div>
                 </div>
+                <!-- IaC & Configuration -->
                 <div class="skill-category">
                     <div class="skill-category-header">
                         <div class="skill-icon"><i class="fas fa-code"></i></div>
@@ -258,6 +267,7 @@
                         <span class="skill-tag aws">CloudFormation</span>
                     </div>
                 </div>
+                <!-- Monitoring & Observability -->
                 <div class="skill-category">
                     <div class="skill-category-header">
                         <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
@@ -271,6 +281,7 @@
                         <span class="skill-tag">Datadog</span>
                     </div>
                 </div>
+                <!-- Security & Compliance -->
                 <div class="skill-category">
                     <div class="skill-category-header">
                         <div class="skill-icon"><i class="fas fa-shield-halved"></i></div>
@@ -284,8 +295,10 @@
                         <span class="skill-tag gcp">Secret Manager</span>
                         <span class="skill-tag gcp">Cloud Armor</span>
                         <span class="skill-tag">SSL/TLS</span>
+                        <span class="skill-tag">OPA</span>
                     </div>
                 </div>
+                <!-- Networking & Infra -->
                 <div class="skill-category">
                     <div class="skill-category-header">
                         <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
@@ -315,9 +328,12 @@
                 <div class="section-line"></div>
             </div>
             <div class="timeline">
+                <!-- TrueMedIT -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date"><span>March 2023 - Present</span></div>
+                    <div class="timeline-date">
+                        <span>March 2023 – Present</span>
+                    </div>
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3>Senior DevOps Engineer</h3>
@@ -325,13 +341,39 @@
                             <span class="location"><i class="fas fa-map-marker-alt"></i> Calgary, Alberta, Canada (Remote)</span>
                         </div>
                         <ul class="timeline-details">
-                            <li><strong>Multi-Cloud Architecture & Governance:</strong> Architected and managed enterprise infrastructure across Azure and GCP, implementing governance policies and cost-management strategies for high availability and cost-efficiency.</li>
-                            <li><strong>Advanced CI/CD Automation:</strong> Engineered end-to-end CI/CD pipelines using Jenkins, Azure DevOps, and Google Cloud Build, significantly reducing lead time for changes across multi-cloud environments.</li>
-                            <li><strong>Kubernetes Orchestration (AKS, GKE & Hybrid):</strong> Deployed and managed production-grade Kubernetes clusters ensuring 99.9% uptime through advanced scaling and self-healing configurations.</li>
-                            <li><strong>Enterprise IaC:</strong> Standardized multi-cloud provisioning using Terraform and Ansible, ensuring 100% consistency across Dev, QA, and Production stages.</li>
-                            <li><strong>DevSecOps & Compliance:</strong> Pioneered security integration with SSL/TLS, automated vulnerability scanning (Prisma/Trivy), and secrets management ensuring banking-level compliance.</li>
-                            <li><strong>Cloud Monitoring & Observability:</strong> Implemented centralized monitoring using Prometheus, Grafana, and Google Cloud Monitoring with integrated alerting for proactive incident detection.</li>
-                            <li><strong>Disaster Recovery:</strong> Designed automated backup and recovery solutions using Azure Backup, Velero, and GCP Cloud Storage with cross-region replication.</li>
+                            <li>
+                                <strong>Multi-Cloud Architecture & Governance:</strong> Architected and managed enterprise
+                                infrastructure across Azure and GCP, implementing governance policies and cost-management
+                                strategies for high availability and cost-efficiency.
+                            </li>
+                            <li>
+                                <strong>Advanced CI/CD Automation:</strong> Engineered end-to-end CI/CD pipelines using Jenkins,
+                                Azure DevOps, and Google Cloud Build, significantly reducing lead time for changes across
+                                multi-cloud environments.
+                            </li>
+                            <li>
+                                <strong>Kubernetes Orchestration (AKS, GKE & Hybrid):</strong> Deployed and managed
+                                production-grade Kubernetes clusters ensuring 99.9% uptime through advanced scaling and
+                                self-healing configurations.
+                            </li>
+                            <li>
+                                <strong>Enterprise IaC:</strong> Standardized multi-cloud provisioning using Terraform and
+                                Ansible, ensuring 100% consistency across Dev, QA, and Production stages.
+                            </li>
+                            <li>
+                                <strong>DevSecOps & Compliance:</strong> Pioneered security integration with SSL/TLS,
+                                automated vulnerability scanning (Prisma/Trivy), and secrets management ensuring
+                                banking-level compliance.
+                            </li>
+                            <li>
+                                <strong>Cloud Monitoring & Observability:</strong> Implemented centralized monitoring using
+                                Prometheus, Grafana, and Google Cloud Monitoring with integrated alerting for proactive
+                                incident detection.
+                            </li>
+                            <li>
+                                <strong>Disaster Recovery:</strong> Designed automated backup and recovery solutions using
+                                Azure Backup, Velero, and GCP Cloud Storage with cross-region replication.
+                            </li>
                         </ul>
                         <div class="timeline-tags">
                             <span>Azure</span><span>GCP</span><span>Kubernetes</span>
@@ -339,9 +381,13 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 403 IT Solutions -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-date"><span>July 2021 - March 2023</span></div>
+                    <div class="timeline-date">
+                        <span>July 2021 – March 2023</span>
+                    </div>
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3>DevOps Engineer</h3>
@@ -349,12 +395,32 @@
                             <span class="location"><i class="fas fa-map-marker-alt"></i> Texas, United States (Remote)</span>
                         </div>
                         <ul class="timeline-details">
-                            <li><strong>Hybrid Cloud Infrastructure:</strong> Architected and optimized Azure and GCP cloud environments, implementing governance and cost-management strategies that scaled infrastructure across multi-cloud deployments.</li>
-                            <li><strong>Enterprise Kubernetes & Virtualization:</strong> Designed high-availability Proxmox clusters on baremetal and orchestrated production Kubernetes workloads on AKS and GKE, ensuring 99.9% uptime.</li>
-                            <li><strong>Advanced CI/CD Orchestration:</strong> Engineered multi-platform automation pipelines using Jenkins, GitHub Actions, GitLab CI, and Google Cloud Build, reducing deployment lead times.</li>
-                            <li><strong>Strategic IaC:</strong> Automated end-to-end lifecycle of global environments across Azure and GCP using Terraform and Ansible, eliminating configuration drift.</li>
-                            <li><strong>Tier 3 Technical Leadership:</strong> Served as the final escalation point for complex networking and system architecture bottlenecks, resolving high-priority incidents.</li>
-                            <li><strong>Cross-functional Mentorship:</strong> Championed DevOps best practices, mentoring junior engineers and leading knowledge-sharing sessions.</li>
+                            <li>
+                                <strong>Hybrid Cloud Infrastructure:</strong> Architected and optimized Azure and GCP cloud
+                                environments, implementing governance and cost-management strategies that scaled infrastructure
+                                across multi-cloud deployments.
+                            </li>
+                            <li>
+                                <strong>Enterprise Kubernetes & Virtualization:</strong> Designed high-availability Proxmox
+                                clusters on baremetal and orchestrated production Kubernetes workloads on AKS and GKE, ensuring
+                                99.9% uptime.
+                            </li>
+                            <li>
+                                <strong>Advanced CI/CD Orchestration:</strong> Engineered multi-platform automation pipelines
+                                using Jenkins, GitHub Actions, GitLab CI, and Google Cloud Build, reducing deployment lead times.
+                            </li>
+                            <li>
+                                <strong>Strategic IaC:</strong> Automated end-to-end lifecycle of global environments across
+                                Azure and GCP using Terraform and Ansible, eliminating configuration drift.
+                            </li>
+                            <li>
+                                <strong>Tier 3 Technical Leadership:</strong> Served as the final escalation point for complex
+                                networking and system architecture bottlenecks, resolving high-priority incidents.
+                            </li>
+                            <li>
+                                <strong>Cross-functional Mentorship:</strong> Championed DevOps best practices, mentoring
+                                junior engineers and leading knowledge-sharing sessions.
+                            </li>
                         </ul>
                         <div class="timeline-tags">
                             <span>Azure</span><span>GCP</span><span>Proxmox</span>
@@ -375,14 +441,144 @@
                 <div class="section-line"></div>
             </div>
             <div class="certs-grid">
-                <div class="cert-card gcp"><div class="cert-icon"><i class="fab fa-google"></i></div><h4>Professional Cloud DevOps Engineer</h4><span class="cert-provider">Google Cloud</span></div>
-                <div class="cert-card gcp"><div class="cert-icon"><i class="fab fa-google"></i></div><h4>Associate Cloud Engineer</h4><span class="cert-provider">Google Cloud</span></div>
-                <div class="cert-card gcp"><div class="cert-icon"><i class="fab fa-google"></i></div><h4>Professional Cloud Architect</h4><span class="cert-provider">Google Cloud</span></div>
-                <div class="cert-card aws-cert"><div class="cert-icon"><i class="fab fa-aws"></i></div><h4>Solutions Architect - Associate</h4><span class="cert-provider">Amazon Web Services</span></div>
-                <div class="cert-card aws-cert"><div class="cert-icon"><i class="fab fa-aws"></i></div><h4>Developer - Associate</h4><span class="cert-provider">Amazon Web Services</span></div>
-                <div class="cert-card azure-cert"><div class="cert-icon"><i class="fab fa-microsoft"></i></div><h4>Azure Administrator Associate</h4><span class="cert-provider">Microsoft</span></div>
-                <div class="cert-card terraform"><div class="cert-icon"><i class="fas fa-cubes"></i></div><h4>Terraform Associate (003)</h4><span class="cert-provider">HashiCorp</span></div>
-                <div class="cert-card other"><div class="cert-icon"><i class="fas fa-shield-halved"></i></div><h4>Cybersecurity & Endpoint Integration</h4><span class="cert-provider">Kaseya / Datto</span></div>
+                <div class="cert-card gcp">
+                    <div class="cert-icon"><i class="fab fa-google"></i></div>
+                    <h4>Professional Cloud DevOps Engineer</h4>
+                    <span class="cert-provider">Google Cloud</span>
+                </div>
+                <div class="cert-card gcp">
+                    <div class="cert-icon"><i class="fab fa-google"></i></div>
+                    <h4>Associate Cloud Engineer</h4>
+                    <span class="cert-provider">Google Cloud</span>
+                </div>
+                <div class="cert-card gcp">
+                    <div class="cert-icon"><i class="fab fa-google"></i></div>
+                    <h4>Professional Cloud Architect</h4>
+                    <span class="cert-provider">Google Cloud</span>
+                </div>
+                <div class="cert-card aws-cert">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h4>Solutions Architect – Associate</h4>
+                    <span class="cert-provider">Amazon Web Services</span>
+                </div>
+                <div class="cert-card aws-cert">
+                    <div class="cert-icon"><i class="fab fa-aws"></i></div>
+                    <h4>Developer – Associate</h4>
+                    <span class="cert-provider">Amazon Web Services</span>
+                </div>
+                <div class="cert-card azure-cert">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <h4>Azure Administrator Associate</h4>
+                    <span class="cert-provider">Microsoft</span>
+                </div>
+                <div class="cert-card terraform">
+                    <div class="cert-icon"><i class="fas fa-cubes"></i></div>
+                    <h4>Terraform Associate (003)</h4>
+                    <span class="cert-provider">HashiCorp</span>
+                </div>
+                <div class="cert-card other">
+                    <div class="cert-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h4>Cybersecurity & Endpoint Integration</h4>
+                    <span class="cert-provider">Kaseya / Datto</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- FinGuard Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-university"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/numaniftikhar1088/devops-ci-cd-portifolio" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">FinGuard</h3>
+                    <p class="project-subtitle">Multi-Cloud Banking Platform</p>
+                    <div class="project-tech-stack">
+                        <span>AWS EKS</span><span>GCP GKE</span><span>Terraform</span>
+                        <span>ArgoCD</span><span>Istio</span><span>GitHub Actions</span>
+                        <span>Vault</span><span>Prometheus</span><span>OPA Gatekeeper</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Architected production-grade multi-tenant banking infrastructure across AWS (primary) and GCP (DR), with automated cross-cloud failover achieving <strong>RPO &lt; 5 min</strong> and <strong>RTO &lt; 15 min</strong>.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Built full GitOps pipeline (GitHub Actions &rarr; ArgoCD) with canary deployments (10% &rarr; 50% &rarr; 100%), automated Trivy/Semgrep security scanning, and Cosign image signing &mdash; <strong>zero manual deployments</strong> to production.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Implemented zero-trust networking via Istio service mesh (mTLS), OPA Gatekeeper policy-as-code, and HashiCorp Vault for dynamic DB credential rotation every 24 hours.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Enforced <strong>PCI-DSS and SOC 2</strong> compliance through automated policy gates, immutable audit trails, and per-tenant PostgreSQL database isolation via Terraform.
+                        </li>
+                    </ul>
+                    <div class="project-badges">
+                        <span class="badge badge-security"><i class="fas fa-shield-halved"></i> PCI-DSS</span>
+                        <span class="badge badge-security"><i class="fas fa-shield-halved"></i> SOC 2</span>
+                        <span class="badge badge-cloud"><i class="fas fa-cloud"></i> Multi-Cloud</span>
+                        <span class="badge badge-gitops"><i class="fas fa-code-branch"></i> GitOps</span>
+                    </div>
+                </div>
+
+                <!-- Lab Management System Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-flask"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/numaniftikhar1088/lab-managementsystem-aks" target="_blank" rel="noopener" class="project-link" aria-label="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Lab Management System</h3>
+                    <p class="project-subtitle">Multi-Tenant SaaS on AKS</p>
+                    <div class="project-tech-stack">
+                        <span>Azure AKS</span><span>.NET Core 8</span><span>Helm</span>
+                        <span>Istio</span><span>KEDA</span><span>Azure DevOps</span>
+                        <span>Azure Key Vault</span><span>Terraform</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Designed <strong>HIPAA &amp; ISO 27001</strong>-compliant multi-tenant SaaS platform for hospitals and research labs, with full isolation at compute, data, and identity layers.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Implemented KEDA-driven autoscaling (0 &rarr; 20 pods) triggered by Azure Service Bus queue depth, running on Spot nodes &mdash; achieving <strong>~70% cost reduction</strong>.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Delivered <strong>p99 API response time &lt; 100ms</strong> and <strong>99.97% uptime SLA</strong> via AKS with HPA, PodDisruptionBudgets, and Azure Front Door.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Provisioned full infrastructure with Terraform (AKS, Azure SQL, Redis, Cosmos DB, Blob Storage) and deployed via Helm + ArgoCD GitOps pipeline with blue/green canary strategy.
+                        </li>
+                    </ul>
+                    <div class="project-badges">
+                        <span class="badge badge-security"><i class="fas fa-shield-halved"></i> HIPAA</span>
+                        <span class="badge badge-security"><i class="fas fa-shield-halved"></i> ISO 27001</span>
+                        <span class="badge badge-perf"><i class="fas fa-bolt"></i> &lt;100ms p99</span>
+                        <span class="badge badge-uptime"><i class="fas fa-arrow-up"></i> 99.97%</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -396,11 +592,13 @@
                 <div class="section-line"></div>
             </div>
             <div class="education-card">
-                <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="edu-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
                 <div class="edu-content">
                     <h3>Bachelor of Science in Information Technology</h3>
                     <span class="edu-school">Virtual University of Pakistan</span>
-                    <span class="edu-date"><i class="fas fa-calendar"></i> May 2018 - September 2022</span>
+                    <span class="edu-date"><i class="fas fa-calendar"></i> May 2018 – September 2022</span>
                     <span class="edu-gpa"><i class="fas fa-star"></i> CGPA: 3.2 / 4.0</span>
                 </div>
             </div>
@@ -419,9 +617,27 @@
             <div class="booking-grid">
                 <div class="booking-info">
                     <div class="booking-highlights">
-                        <div class="booking-highlight-item"><div class="highlight-icon"><i class="fas fa-clock"></i></div><div><h4>30 Minutes</h4><p>Free one-on-one consultation call</p></div></div>
-                        <div class="booking-highlight-item"><div class="highlight-icon"><i class="fas fa-video"></i></div><div><h4>Google Meet / Zoom</h4><p>Virtual meeting at your convenience</p></div></div>
-                        <div class="booking-highlight-item"><div class="highlight-icon"><i class="fas fa-dollar-sign"></i></div><div><h4>100% Free</h4><p>No obligations, no hidden charges</p></div></div>
+                        <div class="booking-highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>30 Minutes</h4>
+                                <p>Free one-on-one consultation call</p>
+                            </div>
+                        </div>
+                        <div class="booking-highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-video"></i></div>
+                            <div>
+                                <h4>Google Meet / Zoom</h4>
+                                <p>Virtual meeting at your convenience</p>
+                            </div>
+                        </div>
+                        <div class="booking-highlight-item">
+                            <div class="highlight-icon"><i class="fas fa-dollar-sign"></i></div>
+                            <div>
+                                <h4>100% Free</h4>
+                                <p>No obligations, no hidden charges</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="booking-topics">
                         <h4><i class="fas fa-lightbulb"></i> What We Can Discuss</h4>
@@ -439,9 +655,18 @@
                 <div class="booking-form-wrapper">
                     <form class="booking-form" id="bookingForm">
                         <h3><i class="fas fa-calendar-check"></i> Schedule Your Call</h3>
-                        <div class="form-group"><input type="text" id="bookName" name="name" placeholder=" " required><label for="bookName">Your Name</label></div>
-                        <div class="form-group"><input type="email" id="bookEmail" name="email" placeholder=" " required><label for="bookEmail">Your Email</label></div>
-                        <div class="form-group"><input type="tel" id="bookPhone" name="phone" placeholder=" "><label for="bookPhone">Phone Number (Optional)</label></div>
+                        <div class="form-group">
+                            <input type="text" id="bookName" name="name" placeholder=" " required>
+                            <label for="bookName">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="bookEmail" name="email" placeholder=" " required>
+                            <label for="bookEmail">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="bookPhone" name="phone" placeholder=" ">
+                            <label for="bookPhone">Phone Number (Optional)</label>
+                        </div>
                         <div class="form-group">
                             <select id="bookTopic" name="topic" required>
                                 <option value="" disabled selected>Select a Topic</option>
@@ -456,7 +681,10 @@
                             </select>
                             <label for="bookTopic" class="select-label">Consultation Topic</label>
                         </div>
-                        <div class="form-group"><input type="date" id="bookDate" name="date" placeholder=" " required><label for="bookDate" class="select-label">Preferred Date</label></div>
+                        <div class="form-group">
+                            <input type="date" id="bookDate" name="date" placeholder=" " required>
+                            <label for="bookDate" class="select-label">Preferred Date</label>
+                        </div>
                         <div class="form-group">
                             <select id="bookTime" name="time" required>
                                 <option value="" disabled selected>Select a Time Slot</option>
@@ -474,8 +702,13 @@
                             </select>
                             <label for="bookTime" class="select-label">Preferred Time</label>
                         </div>
-                        <div class="form-group"><textarea id="bookMessage" name="message" rows="3" placeholder=" "></textarea><label for="bookMessage">Brief Description (Optional)</label></div>
-                        <button type="submit" class="btn btn-accent btn-lg btn-full"><i class="fas fa-calendar-check"></i> Book My Free Call</button>
+                        <div class="form-group">
+                            <textarea id="bookMessage" name="message" rows="3" placeholder=" "></textarea>
+                            <label for="bookMessage">Brief Description (Optional)</label>
+                        </div>
+                        <button type="submit" class="btn btn-accent btn-lg btn-full">
+                            <i class="fas fa-calendar-check"></i> Book My Free Call
+                        </button>
                         <p class="booking-note"><i class="fas fa-shield-halved"></i> Your information is safe and will only be used to schedule your consultation.</p>
                     </form>
                 </div>
@@ -494,20 +727,52 @@
             </div>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="contact-card"><div class="contact-icon"><i class="fas fa-envelope"></i></div><h4>Email</h4><a href="mailto:me@numaniftikhar.com">me@numaniftikhar.com</a></div>
-                    <div class="contact-card"><div class="contact-icon"><i class="fas fa-phone"></i></div><h4>Phone</h4><a href="tel:+923010007414">+92 301 000 7414</a></div>
-                    <div class="contact-card"><div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div><h4>Location</h4><span>Pakistan</span></div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <a href="mailto:hellonumaniftikhar@gmail.com">hellonumaniftikhar@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h4>Phone</h4>
+                        <a href="tel:+923010007414">+92 301 000 7414</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4>Location</h4>
+                        <span>Pakistan</span>
+                    </div>
                     <div class="contact-socials">
-                        <a href="https://linkedin.com/in/numaniftikhar" target="_blank" rel="noopener" class="social-link"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
-                        <a href="https://github.com/numaniftikhar1088" target="_blank" rel="noopener" class="social-link"><i class="fab fa-github"></i><span>GitHub</span></a>
+                        <a href="https://linkedin.com/in/numaniftikhar" target="_blank" rel="noopener" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/numaniftikhar1088" target="_blank" rel="noopener" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
                     </div>
                 </div>
                 <form class="contact-form" id="contactForm">
-                    <div class="form-group"><input type="text" id="name" name="name" placeholder=" " required><label for="name">Your Name</label></div>
-                    <div class="form-group"><input type="email" id="email" name="email" placeholder=" " required><label for="email">Your Email</label></div>
-                    <div class="form-group"><input type="text" id="subject" name="subject" placeholder=" " required><label for="subject">Subject</label></div>
-                    <div class="form-group"><textarea id="message" name="message" rows="5" placeholder=" " required></textarea><label for="message">Your Message</label></div>
-                    <button type="submit" class="btn btn-primary btn-lg btn-full"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-full">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
                 </form>
             </div>
         </div>
@@ -517,12 +782,14 @@
     <footer id="footer">
         <div class="container">
             <div class="footer-content">
-                <a href="#hero" class="footer-logo"><span class="logo-bracket">&lt;</span>NI<span class="logo-bracket">/&gt;</span></a>
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>NI<span class="logo-bracket">/&gt;</span>
+                </a>
                 <p class="footer-text">Designed & Built by Numan Iftikhar</p>
                 <div class="footer-socials">
                     <a href="https://linkedin.com/in/numaniftikhar" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/numaniftikhar1088" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-                    <a href="mailto:me@numaniftikhar.com"><i class="fas fa-envelope"></i></a>
+                    <a href="mailto:hellonumaniftikhar@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
                 <p class="footer-copy">&copy; 2026 Numan Iftikhar. All Rights Reserved.</p>
             </div>

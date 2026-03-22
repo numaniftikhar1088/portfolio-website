@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Reveal animations on scroll
-        document.querySelectorAll('.skill-category, .cert-card, .timeline-item, .contact-card, .education-card, .stat-card, .info-card').forEach(el => {
+        document.querySelectorAll('.skill-category, .cert-card, .timeline-item, .contact-card, .education-card, .stat-card, .info-card, .project-card').forEach(el => {
             const rect = el.getBoundingClientRect();
             if (rect.top < window.innerHeight - 80) {
                 el.classList.add('reveal', 'active');
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const subject = `Free Consultation Request - ${topic}`;
         const body = `Hi Numan,\n\nI would like to book a free consultation call.\n\nDetails:\n- Name: ${name}\n- Email: ${email}\n- Phone: ${phone || 'Not provided'}\n- Topic: ${topic}\n- Preferred Date: ${date}\n- Preferred Time: ${time}\n- Additional Info: ${message || 'N/A'}\n\nLooking forward to connecting!\n\nBest regards,\n${name}`;
 
-        const mailtoLink = `mailto:me@numaniftikhar.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const mailtoLink = `mailto:hellonumaniftikhar@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
 
         const btn = bookingForm.querySelector('button[type="submit"]');
@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = formData.get('message');
 
         // Construct mailto link
-        const mailtoLink = `mailto:me@numaniftikhar.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+        const mailtoLink = `mailto:hellonumaniftikhar@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
         window.location.href = mailtoLink;
 
         // Show feedback

@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Reveal animations on scroll
-        document.querySelectorAll('.skill-category, .cert-card, .timeline-item, .contact-card, .education-card, .stat-card, .info-card, .project-card').forEach(el => {
+        document.querySelectorAll('.service-card, .cert-card, .timeline-item, .contact-card, .education-card, .stat-card, .info-card, .project-card, .why-card, .testimonial-card, .process-step').forEach(el => {
             const rect = el.getBoundingClientRect();
             if (rect.top < window.innerHeight - 80) {
                 el.classList.add('reveal', 'active');

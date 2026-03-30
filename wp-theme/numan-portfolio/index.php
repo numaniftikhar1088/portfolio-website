@@ -29,11 +29,9 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#hero" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#book-call">Book a Call</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -55,6 +53,9 @@
         <div class="hero-particles" id="particles"></div>
         <div class="container hero-container">
             <div class="hero-content">
+                <div class="hero-availability animate-fade-up">
+                    <span class="availability-dot"></span> Available for Remote Work & Freelance
+                </div>
                 <p class="hero-greeting animate-fade-up">Hello, I'm</p>
                 <h1 class="hero-name animate-fade-up delay-1">Numan Iftikhar</h1>
                 <div class="hero-title-wrapper animate-fade-up delay-2">
@@ -63,9 +64,30 @@
                     <span class="typed-cursor">|</span>
                 </div>
                 <p class="hero-description animate-fade-up delay-3">
-                    Building secure, self-healing cloud infrastructures across Azure, AWS & GCP.
-                    Transforming manual workflows into automated, GitOps-driven powerhouses.
+                    I help startups and enterprises build secure, scalable cloud infrastructure.
+                    From multi-cloud architecture to GitOps pipelines &mdash; I ship production-ready systems.
                 </p>
+                <div class="hero-metrics animate-fade-up delay-3">
+                    <div class="hero-metric">
+                        <span class="metric-value">99.9%</span>
+                        <span class="metric-label">Uptime</span>
+                    </div>
+                    <div class="hero-metric-divider"></div>
+                    <div class="hero-metric">
+                        <span class="metric-value">70%</span>
+                        <span class="metric-label">Cost Saved</span>
+                    </div>
+                    <div class="hero-metric-divider"></div>
+                    <div class="hero-metric">
+                        <span class="metric-value">8+</span>
+                        <span class="metric-label">Certifications</span>
+                    </div>
+                    <div class="hero-metric-divider"></div>
+                    <div class="hero-metric">
+                        <span class="metric-value">5+</span>
+                        <span class="metric-label">Years Exp</span>
+                    </div>
+                </div>
                 <div class="hero-cta animate-fade-up delay-4">
                     <a href="#book-call" class="btn btn-accent btn-lg">
                         <i class="fas fa-calendar-check"></i> Book Free Consultation
@@ -81,13 +103,13 @@
                     <a href="https://linkedin.com/in/numaniftikhar" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/numaniftikhar1088" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="mailto:hellonumaniftikhar@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://numaniftikhar.com" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-globe"></i></a>
+
                 </div>
             </div>
             <div class="hero-visual animate-fade-up delay-3">
                 <div class="hero-image-wrapper">
                     <div class="hero-image-border"></div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/profile.jpg" alt="Numan Iftikhar - Senior Multi-Cloud DevOps Engineer" class="hero-profile-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/profile.png" alt="Numan Iftikhar - Senior Multi-Cloud DevOps Engineer" class="hero-profile-img">
                 </div>
                 <div class="floating-badge badge-1">
                     <i class="fab fa-aws"></i> AWS
@@ -110,6 +132,23 @@
             </a>
         </div>
     </section>
+
+    <!-- Trusted By Strip -->
+    <div id="trusted-by">
+        <div class="container">
+            <p class="trusted-label">Trusted Technologies</p>
+            <div class="trusted-logos">
+                <div class="trusted-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+                <div class="trusted-item"><i class="fab fa-microsoft"></i><span>Azure</span></div>
+                <div class="trusted-item"><i class="fab fa-google"></i><span>GCP</span></div>
+                <div class="trusted-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+                <div class="trusted-item"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
+                <div class="trusted-item"><i class="fas fa-code-branch"></i><span>Terraform</span></div>
+                <div class="trusted-item"><i class="fab fa-jenkins"></i><span>Jenkins</span></div>
+                <div class="trusted-item"><i class="fab fa-github"></i><span>GitHub Actions</span></div>
+            </div>
+        </div>
+    </div>
 
     <!-- About Section -->
     <section id="about">
@@ -202,117 +241,110 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
+    <!-- Services Section -->
+    <section id="services">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">&lt;skills&gt;</span>
-                <h2 class="section-title">Skills & Competencies</h2>
+                <span class="section-tag">&lt;services&gt;</span>
+                <h2 class="section-title">What I Can Do For You</h2>
                 <div class="section-line"></div>
+                <p class="section-subtitle">End-to-end DevOps & Cloud solutions tailored to your business needs</p>
             </div>
-            <div class="skills-grid">
-                <!-- Cloud Platforms -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                        <h3>Cloud Platforms</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag azure"><i class="fab fa-microsoft"></i> Microsoft Azure</span>
-                        <span class="skill-tag aws"><i class="fab fa-aws"></i> AWS</span>
-                        <span class="skill-tag gcp"><i class="fab fa-google"></i> Google Cloud</span>
-                    </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-cloud-arrow-up"></i></div>
+                    <h3>Cloud Migration & Architecture</h3>
+                    <p>Migrate your workloads to AWS, Azure, or GCP with zero downtime. Design multi-cloud architectures optimized for cost, performance, and resilience.</p>
+                    <ul class="service-includes">
+                        <li>Cloud readiness assessment</li>
+                        <li>Multi-cloud strategy & design</li>
+                        <li>Zero-downtime migration</li>
+                        <li>Cost optimization (FinOps)</li>
+                    </ul>
                 </div>
-                <!-- Container & Orchestration -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-cubes"></i></div>
-                        <h3>Container & Orchestration</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag azure">AKS</span>
-                        <span class="skill-tag gcp">GKE</span>
-                        <span class="skill-tag aws">EKS</span>
-                        <span class="skill-tag">Helm</span>
-                        <span class="skill-tag">Istio</span>
-                    </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-dharmachakra"></i></div>
+                    <h3>Kubernetes & Container Orchestration</h3>
+                    <p>Production-grade Kubernetes clusters on AKS, EKS, or GKE with auto-scaling, self-healing, and service mesh architectures.</p>
+                    <ul class="service-includes">
+                        <li>Cluster setup & hardening</li>
+                        <li>Helm charts & Istio mesh</li>
+                        <li>Auto-scaling & spot nodes</li>
+                        <li>99.9%+ uptime guarantee</li>
+                    </ul>
                 </div>
-                <!-- CI/CD & Automation -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-rocket"></i></div>
-                        <h3>CI/CD & Automation</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub Actions</span>
-                        <span class="skill-tag"><i class="fab fa-gitlab"></i> GitLab CI</span>
-                        <span class="skill-tag azure">Azure DevOps</span>
-                        <span class="skill-tag gcp">Cloud Build</span>
-                        <span class="skill-tag">Argo CD</span>
-                    </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-code-branch"></i></div>
+                    <h3>CI/CD Pipeline Engineering</h3>
+                    <p>Automated pipelines from commit to production using GitOps principles. Canary, blue/green, and rolling deployments.</p>
+                    <ul class="service-includes">
+                        <li>GitHub Actions / GitLab CI / Jenkins</li>
+                        <li>ArgoCD GitOps workflows</li>
+                        <li>Automated testing gates</li>
+                        <li>Container image scanning</li>
+                    </ul>
                 </div>
-                <!-- IaC & Configuration -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-code"></i></div>
-                        <h3>IaC & Configuration</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Terraform</span>
-                        <span class="skill-tag">Ansible</span>
-                        <span class="skill-tag">Pulumi</span>
-                        <span class="skill-tag aws">CloudFormation</span>
-                    </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Infrastructure as Code (IaC)</h3>
+                    <p>Reproducible, version-controlled infrastructure with Terraform and Ansible. Eliminate drift and manual provisioning forever.</p>
+                    <ul class="service-includes">
+                        <li>Terraform modules & state mgmt</li>
+                        <li>Ansible playbooks & roles</li>
+                        <li>Multi-env provisioning</li>
+                        <li>Drift detection & remediation</li>
+                    </ul>
                 </div>
-                <!-- Monitoring & Observability -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-                        <h3>Monitoring & Observability</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Prometheus</span>
-                        <span class="skill-tag">Grafana</span>
-                        <span class="skill-tag gcp">Cloud Monitoring</span>
-                        <span class="skill-tag gcp">Cloud Logging</span>
-                        <span class="skill-tag">Datadog</span>
-                    </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>DevSecOps & Compliance</h3>
+                    <p>Security baked into every stage of your pipeline. Achieve HIPAA, PCI-DSS, SOC 2, and ISO 27001 compliance.</p>
+                    <ul class="service-includes">
+                        <li>Vulnerability scanning (Trivy/Prisma)</li>
+                        <li>Secrets management (Vault/KV)</li>
+                        <li>Policy-as-code (OPA)</li>
+                        <li>Compliance audit automation</li>
+                    </ul>
                 </div>
-                <!-- Security & Compliance -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-shield-halved"></i></div>
-                        <h3>Security & Compliance</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">DevSecOps</span>
-                        <span class="skill-tag">Trivy</span>
-                        <span class="skill-tag">Prisma Cloud</span>
-                        <span class="skill-tag azure">Key Vault</span>
-                        <span class="skill-tag gcp">Secret Manager</span>
-                        <span class="skill-tag gcp">Cloud Armor</span>
-                        <span class="skill-tag">SSL/TLS</span>
-                        <span class="skill-tag">OPA</span>
-                    </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Monitoring & Observability</h3>
+                    <p>Full-stack observability with Prometheus, Grafana, and cloud-native monitoring. Never be blind-sided by outages again.</p>
+                    <ul class="service-includes">
+                        <li>Prometheus + Grafana dashboards</li>
+                        <li>Log aggregation & alerting</li>
+                        <li>SLO/SLI tracking</li>
+                        <li>Incident response automation</li>
+                    </ul>
                 </div>
-                <!-- Networking & Infra -->
-                <div class="skill-category">
-                    <div class="skill-category-header">
-                        <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
-                        <h3>Networking & Infrastructure</h3>
+            </div>
+
+            <!-- How I Work -->
+            <div class="how-i-work">
+                <h3 class="how-title"><i class="fas fa-arrows-spin"></i> How I Work</h3>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <h4>Discovery Call</h4>
+                        <p>Understand your infrastructure, pain points, and goals</p>
                     </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">VPN</span>
-                        <span class="skill-tag">Firewall</span>
-                        <span class="skill-tag">Nginx</span>
-                        <span class="skill-tag">HAProxy</span>
-                        <span class="skill-tag">Proxmox</span>
-                        <span class="skill-tag">VMware</span>
-                        <span class="skill-tag gcp">GCP VPC</span>
-                        <span class="skill-tag azure">Azure VNET</span>
+                    <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <h4>Architecture Plan</h4>
+                        <p>Design a solution with diagrams, timelines, and milestones</p>
+                    </div>
+                    <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <h4>Implementation</h4>
+                        <p>Build, test, and deploy with full transparency via Git</p>
+                    </div>
+                    <div class="process-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <h4>Handoff & Support</h4>
+                        <p>Documentation, knowledge transfer, and ongoing support</p>
                     </div>
                 </div>
             </div>
@@ -578,6 +610,122 @@
                         <span class="badge badge-perf"><i class="fas fa-bolt"></i> &lt;100ms p99</span>
                         <span class="badge badge-uptime"><i class="fas fa-arrow-up"></i> 99.97%</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hire Me Section -->
+    <section id="why-hire">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;why-me&gt;</span>
+                <h2 class="section-title">Why Work With Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-earth-americas"></i></div>
+                    <h4>100% Remote-Ready</h4>
+                    <p>5+ years working remotely with teams in Canada, USA, and worldwide. Async-first, timezone-flexible, and self-managed.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-certificate"></i></div>
+                    <h4>8+ Cloud Certifications</h4>
+                    <p>Certified across all 3 major clouds (AWS, Azure, GCP) plus Terraform. I don't just talk the talk.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-arrow-trend-up"></i></div>
+                    <h4>Proven Results</h4>
+                    <p>99.9% uptime, 70% cost reductions, zero-downtime deployments. My work is measured in business outcomes.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-lock"></i></div>
+                    <h4>Security-First Mindset</h4>
+                    <p>PCI-DSS, HIPAA, SOC 2, ISO 27001 &mdash; I build compliance into the infrastructure from day one.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-comments"></i></div>
+                    <h4>Clear Communication</h4>
+                    <p>Regular updates, documented decisions, and no jargon. You'll always know exactly where your project stands.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Long-Term Partner</h4>
+                    <p>I don't just deploy and disappear. I provide knowledge transfer, documentation, and ongoing support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;testimonials&gt;</span>
+                <h2 class="section-title">What Clients Say</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Numan transformed our entire cloud infrastructure. Migrated us from a single-server setup to a fully automated multi-cloud architecture with zero downtime. Our deployment time went from hours to minutes."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div>
+                            <span class="author-name">Healthcare SaaS Client</span>
+                            <span class="author-role">CTO, TrueMedIT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Exceptional Kubernetes expertise. Numan set up our production clusters with auto-scaling and monitoring that just works. We haven't had a single unplanned outage since he built our infrastructure."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div>
+                            <span class="author-name">Enterprise IT Client</span>
+                            <span class="author-role">VP Engineering, 403 IT Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Numan's DevSecOps implementation saved us from a potential compliance nightmare. He automated our entire security pipeline and got us PCI-DSS certified ahead of schedule. Highly recommended."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+                        <div>
+                            <span class="author-name">FinTech Startup Client</span>
+                            <span class="author-role">Founder & CEO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-cta">
+                <p>Want to be my next success story?</p>
+                <a href="#book-call" class="btn btn-accent btn-lg"><i class="fas fa-calendar-check"></i> Book a Free Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Me CTA Banner -->
+    <section id="hire-banner">
+        <div class="container">
+            <div class="hire-banner-content">
+                <div class="hire-text">
+                    <h2>Ready to Level Up Your Infrastructure?</h2>
+                    <p>Whether you need a full-time remote DevOps engineer or a freelance cloud architect for your next project &mdash; let's build something great together.</p>
+                </div>
+                <div class="hire-actions">
+                    <a href="#book-call" class="btn btn-accent btn-lg"><i class="fas fa-calendar-check"></i> Book Free Consultation</a>
+
+                    <a href="https://linkedin.com/in/numaniftikhar" target="_blank" rel="noopener" class="btn btn-outline btn-lg"><i class="fab fa-linkedin-in"></i> Connect on LinkedIn</a>
                 </div>
             </div>
         </div>

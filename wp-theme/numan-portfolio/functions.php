@@ -20,7 +20,7 @@ function numan_portfolio_scripts() {
     // Pass resume URL to JS
     wp_localize_script('numan-portfolio-script', 'numanData', array(
         'resumeUrl' => get_template_directory_uri() . '/Numan_Iftikhar_Resume.pdf',
-        'profileImg' => get_template_directory_uri() . '/images/profile.jpg',
+        'profileImg' => get_template_directory_uri() . '/images/profile.png',
     ));
 }
 add_action('wp_enqueue_scripts', 'numan_portfolio_scripts');

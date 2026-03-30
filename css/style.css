@@ -1409,8 +1409,8 @@ section:nth-child(even) { background: var(--bg-surface); }
 }
 
 .project-details li {
-    display: flex;
-    gap: 8px;
+    position: relative;
+    padding-left: 22px;
     margin-bottom: 10px;
     color: var(--text-secondary);
     font-size: 0.85rem;
@@ -1418,9 +1418,10 @@ section:nth-child(even) { background: var(--bg-surface); }
 }
 
 .project-details li i {
+    position: absolute;
+    left: 0;
+    top: 5px;
     color: var(--accent);
-    margin-top: 4px;
-    flex-shrink: 0;
     font-size: 0.75rem;
 }
 

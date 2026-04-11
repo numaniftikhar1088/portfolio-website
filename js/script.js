@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Reveal animations on scroll
-        document.querySelectorAll('.service-card, .cert-card, .timeline-item, .contact-card, .education-card, .stat-card, .info-card, .project-card, .why-card, .testimonial-card, .process-step').forEach(el => {
+        document.querySelectorAll('.service-card, .cert-card, .timeline-item, .contact-card, .education-card, .stat-card, .info-card, .project-card, .why-card, .testimonial-card, .process-step, .blog-card').forEach(el => {
             const rect = el.getBoundingClientRect();
             if (rect.top < window.innerHeight - 80) {
                 el.classList.add('reveal', 'active');
@@ -185,44 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
         particlesContainer.appendChild(particle);
     }
 
-    // --- Booking Form ---
-    const bookingForm = document.getElementById('bookingForm');
-    const bookDateInput = document.getElementById('bookDate');
-
-    // Set min date to today
-    const today = new Date().toISOString().split('T')[0];
-    bookDateInput.setAttribute('min', today);
-
-    bookingForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(bookingForm);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const phone = formData.get('phone');
-        const topic = formData.get('topic');
-        const date = formData.get('date');
-        const time = formData.get('time');
-        const message = formData.get('message');
-
-        const subject = `Free Consultation Request - ${topic}`;
-        const body = `Hi Numan,\n\nI would like to book a free consultation call.\n\nDetails:\n- Name: ${name}\n- Email: ${email}\n- Phone: ${phone || 'Not provided'}\n- Topic: ${topic}\n- Preferred Date: ${date}\n- Preferred Time: ${time}\n- Additional Info: ${message || 'N/A'}\n\nLooking forward to connecting!\n\nBest regards,\n${name}`;
-
-        const mailtoLink = `mailto:hellonumaniftikhar@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.location.href = mailtoLink;
-
-        const btn = bookingForm.querySelector('button[type="submit"]');
-        const originalText = btn.innerHTML;
-        btn.innerHTML = '<i class="fas fa-check-circle"></i> Opening Email Client...';
-        btn.style.background = 'linear-gradient(135deg, #059669, #047857)';
-
-        setTimeout(() => {
-            btn.innerHTML = originalText;
-            btn.style.background = '';
-            bookingForm.reset();
-        }, 3000);
-    });
-
     // --- Contact Form ---
     const contactForm = document.getElementById('contactForm');
     contactForm.addEventListener('submit', (e) => {
@@ -249,6 +211,42 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.style.background = '';
             contactForm.reset();
         }, 3000);
+    });
+
+    // --- Architecture Diagram Modal ---
+    const archModal = document.createElement('div');
+    archModal.className = 'arch-modal';
+    archModal.innerHTML = '<button class="arch-modal-close"><i class="fas fa-times"></i></button><img src="" alt="Architecture Diagram">';
+    document.body.appendChild(archModal);
+
+    const archModalImg = archModal.querySelector('img');
+    const archModalClose = archModal.querySelector('.arch-modal-close');
+
+    document.querySelectorAll('.project-architecture').forEach(arch => {
+        arch.addEventListener('click', () => {
+            const imgSrc = arch.querySelector('img').src;
+            archModalImg.src = imgSrc;
+            archModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    archModalClose.addEventListener('click', (e) => {
+        e.stopPropagation();
+        archModal.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    archModal.addEventListener('click', () => {
+        archModal.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && archModal.classList.contains('active')) {
+            archModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
     });
 
 });

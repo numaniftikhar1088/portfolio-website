@@ -14,8 +14,9 @@ function numan_portfolio_scripts() {
     // Theme stylesheet
     wp_enqueue_style('numan-portfolio-style', get_stylesheet_uri(), array(), '1.0');
 
-    // Theme script
-    wp_enqueue_script('numan-portfolio-script', get_template_directory_uri() . '/js/script.js', array(), '1.0', true);
+    // Theme scripts
+    wp_enqueue_script('numan-portfolio-script', get_template_directory_uri() . '/js/script.js', array(), '3.0', true);
+    wp_enqueue_script('numan-chatbot-script', get_template_directory_uri() . '/js/chatbot.js', array(), '3.0', true);
 
     // Pass resume URL to JS
     wp_localize_script('numan-portfolio-script', 'numanData', array(

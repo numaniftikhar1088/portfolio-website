@@ -32,6 +32,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Work</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#book-call">Book a Call</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -538,6 +539,10 @@
                     </div>
                     <h3 class="project-title">FinGuard</h3>
                     <p class="project-subtitle">Multi-Cloud Banking Platform</p>
+                    <div class="project-architecture">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/finguard-architecture.jpg" alt="FinGuard Architecture Diagram" loading="lazy">
+                        <span class="arch-label"><i class="fas fa-diagram-project"></i> Architecture Diagram</span>
+                    </div>
                     <div class="project-tech-stack">
                         <span>AWS EKS</span><span>GCP GKE</span><span>Terraform</span>
                         <span>ArgoCD</span><span>Istio</span><span>GitHub Actions</span>
@@ -581,6 +586,10 @@
                     </div>
                     <h3 class="project-title">Lab Management System</h3>
                     <p class="project-subtitle">Multi-Tenant SaaS on AKS</p>
+                    <div class="project-architecture">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/lms-architecture.png" alt="Lab Management System Architecture Diagram" loading="lazy">
+                        <span class="arch-label"><i class="fas fa-diagram-project"></i> Architecture Diagram</span>
+                    </div>
                     <div class="project-tech-stack">
                         <span>Azure AKS</span><span>.NET Core 8</span><span>Helm</span>
                         <span>Istio</span><span>KEDA</span><span>Azure DevOps</span>
@@ -753,6 +762,85 @@
         </div>
     </section>
 
+    <!-- Blog Section -->
+    <section id="blog">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;blog&gt;</span>
+                <h2 class="section-title">Latest Insights</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Sharing knowledge on DevOps, Cloud Architecture, and Infrastructure best practices</p>
+            </div>
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="blog-category">Multi-Cloud</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> March 2026</span>
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h3>Multi-Cloud Strategy: AWS + GCP Failover Architecture That Achieves RPO &lt; 5 Minutes</h3>
+                        <p>How I designed a production-grade cross-cloud disaster recovery system for a banking platform using Terraform, Istio, and automated failover pipelines.</p>
+                        <div class="blog-tags">
+                            <span>AWS</span><span>GCP</span><span>Terraform</span><span>DR</span>
+                        </div>
+                        <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder">
+                            <i class="fas fa-dharmachakra"></i>
+                        </div>
+                        <span class="blog-category">Kubernetes</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> February 2026</span>
+                            <span><i class="fas fa-clock"></i> 10 min read</span>
+                        </div>
+                        <h3>KEDA Autoscaling on AKS: How We Cut Cloud Costs by 70% for Bursty Workloads</h3>
+                        <p>A deep dive into event-driven autoscaling with KEDA, Azure Service Bus, and Spot nodes &mdash; from zero pods to handling 10K concurrent requests.</p>
+                        <div class="blog-tags">
+                            <span>Kubernetes</span><span>KEDA</span><span>Azure</span><span>FinOps</span>
+                        </div>
+                        <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-image-placeholder">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <span class="blog-category">DevSecOps</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> January 2026</span>
+                            <span><i class="fas fa-clock"></i> 12 min read</span>
+                        </div>
+                        <h3>Zero-Trust DevSecOps: Building PCI-DSS Compliant CI/CD Pipelines from Scratch</h3>
+                        <p>Step-by-step guide to implementing automated security scanning, OPA policy gates, Vault secret rotation, and Cosign image signing in your GitOps workflow.</p>
+                        <div class="blog-tags">
+                            <span>DevSecOps</span><span>OPA</span><span>Vault</span><span>CI/CD</span>
+                        </div>
+                        <a href="#" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Book a Call Section -->
     <section id="book-call">
         <div class="container">
@@ -801,64 +889,12 @@
                     </div>
                 </div>
                 <div class="booking-form-wrapper">
-                    <form class="booking-form" id="bookingForm">
-                        <h3><i class="fas fa-calendar-check"></i> Schedule Your Call</h3>
-                        <div class="form-group">
-                            <input type="text" id="bookName" name="name" placeholder=" " required>
-                            <label for="bookName">Your Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="bookEmail" name="email" placeholder=" " required>
-                            <label for="bookEmail">Your Email</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="bookPhone" name="phone" placeholder=" ">
-                            <label for="bookPhone">Phone Number (Optional)</label>
-                        </div>
-                        <div class="form-group">
-                            <select id="bookTopic" name="topic" required>
-                                <option value="" disabled selected>Select a Topic</option>
-                                <option value="Cloud Migration">Cloud Migration Strategy</option>
-                                <option value="Kubernetes">Kubernetes Architecture</option>
-                                <option value="CI/CD">CI/CD Pipeline Design</option>
-                                <option value="IaC">Infrastructure as Code</option>
-                                <option value="DevSecOps">DevSecOps & Security</option>
-                                <option value="FinOps">Cloud Cost Optimization</option>
-                                <option value="Monitoring">Monitoring & Observability</option>
-                                <option value="Other">Other</option>
-                            </select>
-                            <label for="bookTopic" class="select-label">Consultation Topic</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="date" id="bookDate" name="date" placeholder=" " required>
-                            <label for="bookDate" class="select-label">Preferred Date</label>
-                        </div>
-                        <div class="form-group">
-                            <select id="bookTime" name="time" required>
-                                <option value="" disabled selected>Select a Time Slot</option>
-                                <option value="09:00 AM">09:00 AM (PKT)</option>
-                                <option value="10:00 AM">10:00 AM (PKT)</option>
-                                <option value="11:00 AM">11:00 AM (PKT)</option>
-                                <option value="12:00 PM">12:00 PM (PKT)</option>
-                                <option value="02:00 PM">02:00 PM (PKT)</option>
-                                <option value="03:00 PM">03:00 PM (PKT)</option>
-                                <option value="04:00 PM">04:00 PM (PKT)</option>
-                                <option value="05:00 PM">05:00 PM (PKT)</option>
-                                <option value="07:00 PM">07:00 PM (PKT)</option>
-                                <option value="08:00 PM">08:00 PM (PKT)</option>
-                                <option value="09:00 PM">09:00 PM (PKT)</option>
-                            </select>
-                            <label for="bookTime" class="select-label">Preferred Time</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="bookMessage" name="message" rows="3" placeholder=" "></textarea>
-                            <label for="bookMessage">Brief Description (Optional)</label>
-                        </div>
-                        <button type="submit" class="btn btn-accent btn-lg btn-full">
-                            <i class="fas fa-calendar-check"></i> Book My Free Call
-                        </button>
-                        <p class="booking-note"><i class="fas fa-shield-halved"></i> Your information is safe and will only be used to schedule your consultation.</p>
-                    </form>
+                    <div class="calendly-embed-wrapper">
+                        <!-- Replace YOUR_CALENDLY_USERNAME with your actual Calendly username -->
+                        <div class="calendly-inline-widget" data-url="https://calendly.com/hellonumaniftikhar/30min?hide_gdpr_banner=1&background_color=111827&text_color=f1f5f9&primary_color=2563eb" style="min-width:320px;height:580px;"></div>
+                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    </div>
+                    <p class="booking-note"><i class="fas fa-shield-halved"></i> Powered by Calendly. Pick a time that works for you &mdash; confirmation is instant.</p>
                 </div>
             </div>
         </div>
@@ -949,6 +985,46 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbot">
+        <div class="chatbot-window" id="chatWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar-sm"><i class="fas fa-headset"></i></div>
+                    <div>
+                        <h4>Numan's AI Assistant</h4>
+                        <span class="chatbot-status"><span class="status-dot"></span> Online</span>
+                    </div>
+                </div>
+                <button class="chatbot-close" id="chatClose" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chatbot-messages" id="chatMessages">
+                <div class="chat-message bot">
+                    <div class="chat-bubble">
+                        Hi there! I'm Numan's AI assistant. I can answer questions about his skills, experience, certifications, services, and availability. How can I help you?
+                    </div>
+                </div>
+                <div class="chat-suggestions" id="chatSuggestions">
+                    <button class="suggestion-btn" data-q="What skills do you have?">Skills & Expertise</button>
+                    <button class="suggestion-btn" data-q="What certifications do you hold?">Certifications</button>
+                    <button class="suggestion-btn" data-q="What services do you offer?">Services</button>
+                    <button class="suggestion-btn" data-q="Are you available for hire?">Availability</button>
+                    <button class="suggestion-btn" data-q="How can I contact you?">Contact Info</button>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatInput" placeholder="Ask me anything..." autocomplete="off">
+                <button id="chatSend" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="chatbot-toggle" id="chatToggle" aria-label="Open chat">
+            <i class="fas fa-headset" id="chatIconOpen"></i>
+            <i class="fas fa-times" id="chatIconClose" style="display:none;"></i>
+            <span class="chatbot-badge">1</span>
+        </button>
+    </div>
+
+    
     <?php wp_footer(); ?>
 </body>
 </html>

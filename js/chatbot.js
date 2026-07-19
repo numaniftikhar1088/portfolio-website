@@ -11,11 +11,15 @@
         },
         {
             keywords: ['who', 'about', 'introduce', 'tell me about', 'yourself', 'numan'],
-            response: "Numan Iftikhar is a <strong>Senior Multi-Cloud DevOps Engineer</strong> with 5+ years of experience specializing in Azure, AWS, and Google Cloud Platform. He's a Kubernetes Architect and Terraform Expert focused on building secure, self-healing cloud infrastructures."
+            response: "Numan Iftikhar is a <strong>Senior DevOps Engineer & AI/MLOps Engineer</strong> with 5+ years of experience specializing in Azure, AWS, and Google Cloud Platform. He's a Kubernetes Architect and Terraform Expert who has extended that same production discipline into building and operating LLM/RAG systems."
         },
         {
             keywords: ['skill', 'expertise', 'technologies', 'tech stack', 'tools', 'what can you do', 'capable'],
-            response: "Numan's core skills include:<br><br>☁️ <strong>Cloud:</strong> Azure, AWS, GCP<br>🐳 <strong>Containers:</strong> Kubernetes, Docker, Helm, Istio<br>🚀 <strong>CI/CD:</strong> Jenkins, GitHub Actions, GitLab CI, ArgoCD<br>📦 <strong>IaC:</strong> Terraform, Ansible, Pulumi<br>📊 <strong>Monitoring:</strong> Prometheus, Grafana, Datadog<br>🔒 <strong>Security:</strong> DevSecOps, Trivy, Prisma Cloud, OPA"
+            response: "Numan's core skills include:<br><br>☁️ <strong>Cloud:</strong> Azure, AWS, GCP<br>🐳 <strong>Containers:</strong> Kubernetes (AKS/EKS/GKE), Helm, KEDA, ArgoCD<br>🚀 <strong>CI/CD:</strong> Jenkins, GitHub Actions, Azure DevOps, canary/blue-green<br>📦 <strong>IaC:</strong> Terraform<br>📊 <strong>Monitoring:</strong> Prometheus, Grafana, Vault<br>🤖 <strong>AI/LLM:</strong> RAG pipelines (Ollama, ChromaDB, Qdrant, Claude API), FastAPI serving<br><br>He's also currently building depth in vLLM/model serving, fine-tuning (LoRA/PEFT), and LangGraph agents &mdash; learning, not yet production experience."
+        },
+        {
+            keywords: ['ai', 'mlops', 'llmops', 'llm', 'rag', 'genai', 'machine learning', 'artificial intelligence'],
+            response: "Numan is repositioning as a <strong>Senior DevOps & AI/MLOps Engineer</strong>. He's shipped a full RAG pipeline (Ollama embeddings, ChromaDB/Qdrant retrieval, Claude API generation, FastAPI + Docker/Kubernetes) and brings production discipline to AI systems: eval-gated deploys, LLM observability (tokens/cost/latency), guardrails, and autoscaling for inference &mdash; on top of his Kubernetes/Terraform foundation. He's currently building depth in vLLM, fine-tuning (LoRA/PEFT), LangGraph agents, and GPU scheduling. Check out the <a href='#skills' onclick='closeChatAndScroll(\"skills\")'>Skills section</a> or the RAG project in <a href='#projects' onclick='closeChatAndScroll(\"projects\")'>Projects</a>!"
         },
         {
             keywords: ['experience', 'work history', 'career', 'years', 'where did you work', 'companies', 'job'],
@@ -39,7 +43,7 @@
         },
         {
             keywords: ['project', 'portfolio', 'case study', 'work sample', 'built'],
-            response: "Numan has worked on impressive projects:<br><br>🏦 <strong>FinGuard</strong> — Multi-Cloud Banking Platform<br>• AWS EKS + GCP GKE, Terraform, ArgoCD, Istio<br>• PCI-DSS & SOC 2 compliant, RPO < 5 min<br><br>🧪 <strong>Lab Management System</strong> — Multi-Tenant SaaS on AKS<br>• HIPAA & ISO 27001 compliant<br>• 99.97% uptime, p99 < 100ms<br>• ~70% cost reduction with KEDA autoscaling<br><br>Check them out in the <a href='#projects' onclick='closeChatAndScroll(\"projects\")'>Projects section</a>!"
+            response: "Numan has worked on impressive projects:<br><br>🤖 <strong>RAG Knowledge Assistant</strong> — his flagship AI project<br>• Ollama embeddings, ChromaDB/Qdrant retrieval, Claude API generation<br>• FastAPI service, Dockerized for Kubernetes<br><br>🏦 <strong>FinGuard</strong> — Multi-Cloud Banking Platform<br>• AWS EKS + GCP GKE, Terraform, ArgoCD, Istio<br>• PCI-DSS & SOC 2 compliant, RPO < 5 min<br><br>🧪 <strong>Lab Management System</strong> — Multi-Tenant SaaS on AKS<br>• HIPAA & ISO 27001 compliant<br>• 99.97% uptime, p99 < 100ms<br>• ~70% cost reduction with KEDA autoscaling<br><br>🔒 <strong>Production AKS + Site-to-Site VPN</strong> — Hybrid cloud & VoIP (Dubai)<br>• Terraform + Azure DevOps, NSGs + K8s NetworkPolicies<br><br>Check them out in the <a href='#projects' onclick='closeChatAndScroll(\"projects\")'>Projects section</a>!"
         },
         {
             keywords: ['kubernetes', 'k8s', 'container', 'docker', 'orchestration', 'aks', 'eks', 'gke'],

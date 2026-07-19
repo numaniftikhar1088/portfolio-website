@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Typed Text Effect ---
     const typedElement = document.getElementById('typedText');
     const words = [
+        'DevOps & AI/MLOps Engineer',
         'Multi-Cloud DevOps Engineer',
         'Kubernetes Architect',
+        'LLM/RAG Systems Engineer',
         'Terraform Expert',
-        'CI/CD Specialist',
-        'Cloud Security Engineer',
-        'DevSecOps Practitioner'
+        'CI/CD Specialist'
     ];
     let wordIndex = 0;
     let charIndex = 0;
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Reveal animations on scroll
-        document.querySelectorAll('.service-card, .cert-card, .timeline-item, .contact-card, .education-card, .stat-card, .info-card, .project-card, .why-card, .testimonial-card, .process-step, .blog-card').forEach(el => {
+        document.querySelectorAll('.service-card, .cert-card, .timeline-item, .contact-card, .education-card, .stat-card, .info-card, .project-card, .why-card, .testimonial-card, .process-step, .blog-card, .skill-card, .roadmap-card').forEach(el => {
             const rect = el.getBoundingClientRect();
             if (rect.top < window.innerHeight - 80) {
                 el.classList.add('reveal', 'active');

@@ -3,8 +3,8 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Numan Iftikhar - Senior Multi-Cloud DevOps Engineer | Kubernetes Architect | Terraform Expert">
-    <meta name="keywords" content="DevOps Engineer, Cloud Architect, Kubernetes, Terraform, Azure, AWS, GCP">
+    <meta name="description" content="Numan Iftikhar - Senior DevOps, MLOps & AI Platform Engineer | Kubernetes Architect | Terraform Expert">
+    <meta name="keywords" content="DevOps Engineer, AI Platform Engineer, MLOps Engineer, Cloud Architect, Kubernetes, Terraform, Azure, AWS, GCP">
     <meta name="author" content="Numan Iftikhar">
     
     <?php wp_head(); ?>
@@ -55,7 +55,7 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <div class="hero-availability animate-fade-up">
-                    <span class="availability-dot"></span> Available for Remote Work & Freelance
+                    <span class="availability-dot"></span> Open to Senior DevOps, SRE & AI Platform Roles
                 </div>
                 <p class="hero-greeting animate-fade-up">Hello, I'm</p>
                 <h1 class="hero-name animate-fade-up delay-1">Numan Iftikhar</h1>
@@ -65,8 +65,9 @@
                     <span class="typed-cursor">|</span>
                 </div>
                 <p class="hero-description animate-fade-up delay-3">
-                    I help startups and enterprises build secure, scalable cloud infrastructure.
-                    From multi-cloud architecture to GitOps pipelines &mdash; I ship production-ready systems.
+                    I'm a Senior DevOps and AI Platform Engineer working across Azure, AWS, and Google Cloud.
+                    I design Kubernetes platforms, ship them with Terraform, and build the LLM systems on top
+                    &mdash; for teams that need production software to be reliable, secure, and defensible.
                 </p>
                 <div class="hero-metrics animate-fade-up delay-3">
                     <div class="hero-metric">
@@ -80,7 +81,7 @@
                     </div>
                     <div class="hero-metric-divider"></div>
                     <div class="hero-metric">
-                        <span class="metric-value">8+</span>
+                        <span class="metric-value">7</span>
                         <span class="metric-label">Certifications</span>
                     </div>
                     <div class="hero-metric-divider"></div>
@@ -103,14 +104,15 @@
                 <div class="hero-social animate-fade-up delay-5">
                     <a href="https://linkedin.com/in/numaniftikhar" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/numaniftikhar1088" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="mailto:hellonumaniftikhar@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://numaniftikhar.com" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-globe"></i></a>
+                    <a href="mailto:me@numaniftikhar.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
 
                 </div>
             </div>
             <div class="hero-visual animate-fade-up delay-3">
                 <div class="hero-image-wrapper">
                     <div class="hero-image-border"></div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/profile.png" alt="Numan Iftikhar - Senior Multi-Cloud DevOps Engineer" class="hero-profile-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/profile.png" alt="Numan Iftikhar - Senior DevOps, MLOps & AI Platform Engineer" class="hero-profile-img">
                 </div>
                 <div class="floating-badge badge-1">
                     <i class="fab fa-aws"></i> AWS
@@ -161,17 +163,20 @@
             </div>
             <div class="about-grid">
                 <div class="about-content">
-                    <h3>Senior Multi-Cloud DevOps Engineer</h3>
+                    <h3>Senior DevOps, MLOps & AI Platform Engineer</h3>
+                    <p>
+                        I'm a Senior DevOps and AI Platform Engineer working across Azure, AWS, and Google Cloud.
+                        I design Kubernetes platforms, ship them with Terraform, and build the LLM systems on top
+                        &mdash; for teams that need production software to be reliable, secure, and defensible.
+                    </p>
                     <p>
                         With <strong>5+ years of experience</strong> specializing in Azure, AWS, and Google Cloud Platform,
                         I am a Kubernetes Architect and IaC Expert with deep expertise in designing, deploying, and managing
                         enterprise-grade cloud infrastructure across hybrid and multi-cloud environments.
                     </p>
                     <p>
-                        As a <strong>Google Cloud Certified</strong> professional, I'm skilled in transforming manual workflows
-                        into automated, GitOps-driven powerhouses. From DevSecOps integration to FinOps cloud optimization,
-                        I focus on building secure, self-healing infrastructures that enable developers to ship code faster
-                        and more reliably.
+                        I run this practice through my consultancy, <strong>108 Core Technologies</strong>, and I'm
+                        currently open to senior DevOps, SRE, and AI Platform roles.
                     </p>
                     <div class="about-stats">
                         <div class="stat-card">
@@ -179,7 +184,7 @@
                             <span class="stat-label">Years Experience</span>
                         </div>
                         <div class="stat-card">
-                            <span class="stat-number" data-count="8">0</span><span class="stat-plus">+</span>
+                            <span class="stat-number" data-count="7">0</span>
                             <span class="stat-label">Certifications</span>
                         </div>
                         <div class="stat-card">
@@ -205,7 +210,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <span class="info-label">Email</span>
-                                <span class="info-value">hellonumaniftikhar@gmail.com</span>
+                                <span class="info-value">me@numaniftikhar.com</span>
                             </div>
                         </div>
                         <div class="info-item">
@@ -219,7 +224,14 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <span class="info-label">Location</span>
-                                <span class="info-value">Pakistan</span>
+                                <span class="info-value">Lahore, Pakistan (working worldwide)</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <span class="info-label">Consultancy</span>
+                                <span class="info-value">108 Core Technologies</span>
                             </div>
                         </div>
                         <div class="info-item">
@@ -233,7 +245,7 @@
                             <i class="fas fa-circle-check"></i>
                             <div>
                                 <span class="info-label">Availability</span>
-                                <span class="info-value available">Available for Work</span>
+                                <span class="info-value available">Open to Senior Roles</span>
                             </div>
                         </div>
                     </div>
@@ -501,18 +513,13 @@
                 </div>
                 <div class="cert-card azure-cert">
                     <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
-                    <h4>Azure Administrator Associate</h4>
+                    <h4>Azure Administrator Associate (AZ-104)</h4>
                     <span class="cert-provider">Microsoft</span>
                 </div>
                 <div class="cert-card terraform">
                     <div class="cert-icon"><i class="fas fa-cubes"></i></div>
                     <h4>Terraform Associate (003)</h4>
                     <span class="cert-provider">HashiCorp</span>
-                </div>
-                <div class="cert-card other">
-                    <div class="cert-icon"><i class="fas fa-shield-halved"></i></div>
-                    <h4>Cybersecurity & Endpoint Integration</h4>
-                    <span class="cert-provider">Kaseya / Datto</span>
                 </div>
             </div>
         </div>
@@ -537,7 +544,7 @@
                             </a>
                         </div>
                     </div>
-                    <h3 class="project-title">FinGuard</h3>
+                    <h3 class="project-title">FinGuard <span class="reference-tag">Reference Architecture</span></h3>
                     <p class="project-subtitle">Multi-Cloud Banking Platform</p>
                     <div class="project-architecture">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/finguard-architecture.jpg" alt="FinGuard Architecture Diagram" loading="lazy">
@@ -584,8 +591,8 @@
                             </a>
                         </div>
                     </div>
-                    <h3 class="project-title">Lab Management System</h3>
-                    <p class="project-subtitle">Multi-Tenant SaaS on AKS</p>
+                    <h3 class="project-title">Lab Management System <span class="reference-tag">Reference Architecture</span></h3>
+                    <p class="project-subtitle">Multi-Tenant Healthcare SaaS on AKS</p>
                     <div class="project-architecture">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/lms-architecture.png" alt="Lab Management System Architecture Diagram" loading="lazy">
                         <span class="arch-label"><i class="fas fa-diagram-project"></i> Architecture Diagram</span>
@@ -640,7 +647,7 @@
                 </div>
                 <div class="why-card">
                     <div class="why-icon"><i class="fas fa-certificate"></i></div>
-                    <h4>8+ Cloud Certifications</h4>
+                    <h4>7 Cloud Certifications</h4>
                     <p>Certified across all 3 major clouds (AWS, Azure, GCP) plus Terraform. I don't just talk the talk.</p>
                 </div>
                 <div class="why-card">
@@ -914,7 +921,7 @@
                     <div class="contact-card">
                         <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                         <h4>Email</h4>
-                        <a href="mailto:hellonumaniftikhar@gmail.com">hellonumaniftikhar@gmail.com</a>
+                        <a href="mailto:me@numaniftikhar.com">me@numaniftikhar.com</a>
                     </div>
                     <div class="contact-card">
                         <div class="contact-icon"><i class="fas fa-phone"></i></div>
@@ -924,7 +931,7 @@
                     <div class="contact-card">
                         <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                         <h4>Location</h4>
-                        <span>Pakistan</span>
+                        <span>Lahore, Pakistan (working worldwide)</span>
                     </div>
                     <div class="contact-socials">
                         <a href="https://linkedin.com/in/numaniftikhar" target="_blank" rel="noopener" class="social-link">
@@ -934,6 +941,10 @@
                         <a href="https://github.com/numaniftikhar1088" target="_blank" rel="noopener" class="social-link">
                             <i class="fab fa-github"></i>
                             <span>GitHub</span>
+                        </a>
+                        <a href="https://numaniftikhar.com" target="_blank" rel="noopener" class="social-link">
+                            <i class="fas fa-globe"></i>
+                            <span>Website</span>
                         </a>
                     </div>
                 </div>
@@ -973,7 +984,8 @@
                 <div class="footer-socials">
                     <a href="https://linkedin.com/in/numaniftikhar" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/numaniftikhar1088" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-                    <a href="mailto:hellonumaniftikhar@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://numaniftikhar.com" target="_blank" rel="noopener"><i class="fas fa-globe"></i></a>
+                    <a href="mailto:me@numaniftikhar.com"><i class="fas fa-envelope"></i></a>
                 </div>
                 <p class="footer-copy">&copy; 2026 Numan Iftikhar. All Rights Reserved.</p>
             </div>

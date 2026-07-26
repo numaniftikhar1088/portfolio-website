@@ -1388,6 +1388,23 @@ section:nth-child(even) { background: var(--bg-surface); }
     font-size: 1.3rem;
     font-weight: 800;
     margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.reference-tag {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(225, 29, 46, 0.1);
+    color: var(--primary);
+    font-size: 0.62rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 3px 9px;
+    border-radius: 50px;
 }
 
 .project-subtitle {

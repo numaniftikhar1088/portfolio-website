@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Typed Text Effect ---
     const typedElement = document.getElementById('typedText');
     const words = [
-        'DevOps & AI/MLOps Engineer',
+        'DevOps, MLOps & AI Platform Engineer',
         'Multi-Cloud DevOps Engineer',
         'Kubernetes Architect',
         'LLM/RAG Systems Engineer',
         'Terraform Expert',
-        'CI/CD Specialist'
+        'AI Platform Engineer'
     ];
     let wordIndex = 0;
     let charIndex = 0;
@@ -97,15 +97,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.classList.add('active');
             }
         });
+    });
 
-        // Reveal animations on scroll
-        document.querySelectorAll('.service-card, .cert-card, .timeline-item, .contact-card, .education-card, .stat-card, .info-card, .project-card, .why-card, .testimonial-card, .process-step, .blog-card, .skill-card, .roadmap-card').forEach(el => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top < window.innerHeight - 80) {
-                el.classList.add('reveal', 'active');
+    // --- Reveal Animations on Scroll ---
+    const revealTargets = document.querySelectorAll('.service-card, .cert-card, .timeline-item, .contact-card, .education-card, .stat-card, .info-card, .project-card, .why-card, .testimonial-card, .process-step, .blog-card, .skill-card, .roadmap-card, .section-header');
+    revealTargets.forEach(el => el.classList.add('reveal'));
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
             }
         });
-    });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+    revealTargets.forEach(el => revealObserver.observe(el));
 
     // --- Mobile Menu ---
     const hamburger = document.getElementById('hamburger');
@@ -153,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     requestAnimationFrame(updateCounter);
                 } else {
                     counter.textContent = target;
+                    counter.classList.add('counted');
                 }
             };
 
@@ -197,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = formData.get('message');
 
         // Construct mailto link
-        const mailtoLink = `mailto:hellonumaniftikhar@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+        const mailtoLink = `mailto:me@numaniftikhar.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
         window.location.href = mailtoLink;
 
         // Show feedback
@@ -248,5 +256,37 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = '';
         }
     });
+
+    // --- Scroll Progress Bar ---
+    const scrollProgress = document.getElementById('scrollProgress');
+    if (scrollProgress) {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            scrollProgress.style.width = pct + '%';
+        });
+    }
+
+    // --- Project Card Tilt Effect ---
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+    if (!prefersReducedMotion && supportsHover) {
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                card.style.setProperty('--rx', (x * 8) + 'deg');
+                card.style.setProperty('--ry', (y * -8) + 'deg');
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.setProperty('--rx', '0deg');
+                card.style.setProperty('--ry', '0deg');
+            });
+        });
+    }
 
 });

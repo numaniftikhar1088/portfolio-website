@@ -11,15 +11,15 @@
         },
         {
             keywords: ['who', 'about', 'introduce', 'tell me about', 'yourself', 'numan'],
-            response: "Numan Iftikhar is a <strong>Senior DevOps Engineer & AI/MLOps Engineer</strong> with 5+ years of experience specializing in Azure, AWS, and Google Cloud Platform. He's a Kubernetes Architect and Terraform Expert who has extended that same production discipline into building and operating LLM/RAG systems."
+            response: "Numan Iftikhar is a <strong>Senior DevOps, MLOps & AI Platform Engineer</strong> based in Lahore, Pakistan, working worldwide. With 5+ years across Azure, AWS, and Google Cloud, he designs Kubernetes platforms, ships them with Terraform, and builds the LLM systems on top. He runs his own consultancy, <strong>108 Core Technologies</strong>."
         },
         {
-            keywords: ['skill', 'expertise', 'technologies', 'tech stack', 'tools', 'what can you do', 'capable'],
-            response: "Numan's core skills include:<br><br>☁️ <strong>Cloud:</strong> Azure, AWS, GCP<br>🐳 <strong>Containers:</strong> Kubernetes (AKS/EKS/GKE), Helm, KEDA, ArgoCD<br>🚀 <strong>CI/CD:</strong> Jenkins, GitHub Actions, Azure DevOps, canary/blue-green<br>📦 <strong>IaC:</strong> Terraform<br>📊 <strong>Monitoring:</strong> Prometheus, Grafana, Vault<br>🤖 <strong>AI/LLM:</strong> RAG pipelines (Ollama, ChromaDB, Qdrant, Claude API), FastAPI serving<br><br>He's also currently building depth in vLLM/model serving, fine-tuning (LoRA/PEFT), and LangGraph agents &mdash; learning, not yet production experience."
+            keywords: ['skill', 'expertise', 'technologies', 'tech stack', 'tools', 'what can you do', 'capable', 'practice area'],
+            response: "Numan works across three practice areas:<br><br>☁️ <strong>Cloud & DevOps Engineering:</strong> AKS, Terraform, Azure DevOps, Prometheus, Grafana<br>🤖 <strong>AI Engineering & LLMOps:</strong> Ollama, Qdrant, ChromaDB, FastAPI, LangGraph, Claude API<br>🗄️ <strong>Data Engineering:</strong> Python, FastAPI, ETL pipelines, cloud pricing APIs<br><br>He's also currently building depth in vLLM/model serving, fine-tuning (LoRA/PEFT), and GPU scheduling &mdash; learning, not yet production experience."
         },
         {
             keywords: ['ai', 'mlops', 'llmops', 'llm', 'rag', 'genai', 'machine learning', 'artificial intelligence'],
-            response: "Numan is repositioning as a <strong>Senior DevOps & AI/MLOps Engineer</strong>. He's shipped a full RAG pipeline (Ollama embeddings, ChromaDB/Qdrant retrieval, Claude API generation, FastAPI + Docker/Kubernetes) and brings production discipline to AI systems: eval-gated deploys, LLM observability (tokens/cost/latency), guardrails, and autoscaling for inference &mdash; on top of his Kubernetes/Terraform foundation. He's currently building depth in vLLM, fine-tuning (LoRA/PEFT), LangGraph agents, and GPU scheduling. Check out the <a href='#skills' onclick='closeChatAndScroll(\"skills\")'>Skills section</a> or the RAG project in <a href='#projects' onclick='closeChatAndScroll(\"projects\")'>Projects</a>!"
+            response: "Numan is a <strong>Senior DevOps, MLOps & AI Platform Engineer</strong>. He's built a private RAG pipeline (local Ollama inference, Qdrant vector store, FastAPI service layer, Claude API as an optional escalation path) and an LLM-assisted Cloud Cost Estimator that prices architectures against the live Azure Retail Prices API. He's currently building depth in vLLM, fine-tuning (LoRA/PEFT), and GPU scheduling. Check out the <a href='#skills' onclick='closeChatAndScroll(\"skills\")'>Practice Areas section</a> or the projects in <a href='#projects' onclick='closeChatAndScroll(\"projects\")'>Projects</a>!"
         },
         {
             keywords: ['experience', 'work history', 'career', 'years', 'where did you work', 'companies', 'job'],
@@ -27,11 +27,11 @@
         },
         {
             keywords: ['certification', 'certified', 'certificate', 'credentials', 'qualifications'],
-            response: "Numan holds <strong>8+ industry certifications</strong>:<br><br>🟢 Google Cloud – Professional Cloud DevOps Engineer<br>🟢 Google Cloud – Professional Cloud Architect<br>🟢 Google Cloud – Associate Cloud Engineer<br>🟠 AWS Solutions Architect – Associate<br>🟠 AWS Developer – Associate<br>🔵 Microsoft Azure Administrator Associate<br>🟣 HashiCorp Terraform Associate<br>🔴 Kaseya Certified – Cybersecurity"
+            response: "Numan holds <strong>7 active certifications</strong>:<br><br>🟢 Google Cloud – Professional Cloud DevOps Engineer<br>🟢 Google Cloud – Professional Cloud Architect<br>🟢 Google Cloud – Associate Cloud Engineer<br>🟠 AWS Solutions Architect – Associate<br>🟠 AWS Developer – Associate<br>🔵 Microsoft Azure Administrator Associate (AZ-104)<br>🟣 HashiCorp Terraform Associate (003)"
         },
         {
             keywords: ['service', 'offer', 'what do you provide', 'help with', 'consulting'],
-            response: "Numan offers the following services:<br><br>☁️ <strong>Cloud Migration & Architecture</strong> — AWS, Azure, GCP<br>⚙️ <strong>Kubernetes Design & Deployment</strong> — AKS, EKS, GKE<br>🔄 <strong>CI/CD Pipeline Engineering</strong> — End-to-end automation<br>📋 <strong>Infrastructure as Code</strong> — Terraform, Ansible<br>🔒 <strong>DevSecOps Implementation</strong> — Security-first pipelines<br>📊 <strong>Monitoring & Observability</strong> — Prometheus, Grafana<br>💰 <strong>Cloud Cost Optimization</strong> — FinOps strategies"
+            response: "Numan offers the following services, through his consultancy <strong>108 Core Technologies</strong>:<br><br>☁️ <strong>Cloud Migration & Architecture</strong> — AWS, Azure, GCP<br>⚙️ <strong>Kubernetes Design & Deployment</strong> — AKS, EKS, GKE<br>🔄 <strong>CI/CD Pipeline Engineering</strong> — End-to-end automation<br>📋 <strong>Infrastructure as Code</strong> — Terraform, Ansible<br>🔒 <strong>DevSecOps Implementation</strong> — Security-first pipelines<br>📊 <strong>Monitoring & Observability</strong> — Prometheus, Grafana<br>💰 <strong>Cloud Cost Optimization</strong> — FinOps strategies"
         },
         {
             keywords: ['available', 'hire', 'hiring', 'freelance', 'remote', 'open to work', 'looking for'],
@@ -39,11 +39,11 @@
         },
         {
             keywords: ['contact', 'reach', 'email', 'phone', 'get in touch', 'connect'],
-            response: "You can reach Numan through:<br><br>📧 <strong>Email:</strong> <a href='mailto:hellonumaniftikhar@gmail.com'>hellonumaniftikhar@gmail.com</a><br>📞 <strong>Phone:</strong> +92 301 000 7414<br>🔗 <strong>LinkedIn:</strong> <a href='https://linkedin.com/in/numaniftikhar' target='_blank'>linkedin.com/in/numaniftikhar</a><br>💻 <strong>GitHub:</strong> <a href='https://github.com/numaniftikhar1088' target='_blank'>github.com/numaniftikhar1088</a><br><br>Or <a href='#book-call' onclick='closeChatAndScroll(\"book-call\")'>book a free call</a>!"
+            response: "You can reach Numan through:<br><br>📧 <strong>Email:</strong> <a href='mailto:me@numaniftikhar.com'>me@numaniftikhar.com</a><br>📞 <strong>Phone:</strong> +92 301 000 7414<br>🔗 <strong>LinkedIn:</strong> <a href='https://linkedin.com/in/numaniftikhar' target='_blank'>linkedin.com/in/numaniftikhar</a><br>💻 <strong>GitHub:</strong> <a href='https://github.com/numaniftikhar1088' target='_blank'>github.com/numaniftikhar1088</a><br>🌐 <strong>Website:</strong> <a href='https://numaniftikhar.com' target='_blank'>numaniftikhar.com</a><br><br>Or <a href='#book-call' onclick='closeChatAndScroll(\"book-call\")'>book a free call</a>!"
         },
         {
             keywords: ['project', 'portfolio', 'case study', 'work sample', 'built'],
-            response: "Numan has worked on impressive projects:<br><br>🤖 <strong>RAG Knowledge Assistant</strong> — his flagship AI project<br>• Ollama embeddings, ChromaDB/Qdrant retrieval, Claude API generation<br>• FastAPI service, Dockerized for Kubernetes<br><br>🏦 <strong>FinGuard</strong> — Multi-Cloud Banking Platform<br>• AWS EKS + GCP GKE, Terraform, ArgoCD, Istio<br>• PCI-DSS & SOC 2 compliant, RPO < 5 min<br><br>🧪 <strong>Lab Management System</strong> — Multi-Tenant SaaS on AKS<br>• HIPAA & ISO 27001 compliant<br>• 99.97% uptime, p99 < 100ms<br>• ~70% cost reduction with KEDA autoscaling<br><br>🔒 <strong>Production AKS + Site-to-Site VPN</strong> — Hybrid cloud & VoIP (Dubai)<br>• Terraform + Azure DevOps, NSGs + K8s NetworkPolicies<br><br>Check them out in the <a href='#projects' onclick='closeChatAndScroll(\"projects\")'>Projects section</a>!"
+            response: "Numan has worked on impressive projects:<br><br>🤖 <strong>Private RAG Pipeline</strong> — his flagship AI project<br>• Local Ollama inference, Qdrant vector store, FastAPI service layer<br>• Claude API as an optional escalation path, Dockerized for Kubernetes<br><br>💰 <strong>Cloud Cost Estimator</strong> — LLM-assisted architecture pricing<br>• LLM identifies resources, Python prices them against the Azure Retail Prices API<br><br>🏦 <strong>FinGuard</strong> (Reference Architecture) — Multi-Cloud Banking Platform<br>• AWS EKS + GCP GKE, Terraform, ArgoCD, Istio<br>• PCI-DSS & SOC 2 compliant, RPO < 5 min<br><br>🧪 <strong>Lab Management System</strong> (Reference Architecture) — Multi-Tenant Healthcare SaaS on AKS<br>• HIPAA & ISO 27001 compliant<br>• 99.97% uptime, p99 < 100ms<br>• ~70% cost reduction with KEDA autoscaling<br><br>🔒 <strong>Secure Hybrid VoIP Platform</strong> — Telecom hybrid cloud & VoIP (Dubai)<br>• Terraform + Azure DevOps, NSGs + K8s NetworkPolicies<br><br>Check them out in the <a href='#projects' onclick='closeChatAndScroll(\"projects\")'>Projects section</a>!"
         },
         {
             keywords: ['kubernetes', 'k8s', 'container', 'docker', 'orchestration', 'aks', 'eks', 'gke'],
@@ -75,7 +75,7 @@
         },
         {
             keywords: ['location', 'where', 'country', 'based', 'timezone'],
-            response: "Numan is based in <strong>Pakistan</strong> and works remotely with clients worldwide. He's experienced in collaborating across timezones with teams in <strong>Canada, the United States</strong>, and globally."
+            response: "Numan is based in <strong>Lahore, Pakistan</strong> and works remotely with clients worldwide. He's experienced in collaborating across timezones with teams in <strong>Canada, the United States</strong>, and globally."
         },
         {
             keywords: ['language', 'speak', 'english', 'urdu'],
@@ -83,7 +83,7 @@
         },
         {
             keywords: ['rate', 'price', 'cost', 'charge', 'budget', 'pricing', 'how much'],
-            response: "Numan offers competitive rates based on project scope and duration. For a detailed quote, you can:<br><br>📅 <a href='#book-call' onclick='closeChatAndScroll(\"book-call\")'>Book a free 30-minute consultation</a><br>📧 Email: <a href='mailto:hellonumaniftikhar@gmail.com'>hellonumaniftikhar@gmail.com</a><br><br>The initial consultation is <strong>100% free</strong> with no obligations!"
+            response: "Numan offers competitive rates based on project scope and duration. For a detailed quote, you can:<br><br>📅 <a href='#book-call' onclick='closeChatAndScroll(\"book-call\")'>Book a free 30-minute consultation</a><br>📧 Email: <a href='mailto:me@numaniftikhar.com'>me@numaniftikhar.com</a><br><br>The initial consultation is <strong>100% free</strong> with no obligations!"
         },
         {
             keywords: ['resume', 'cv', 'download'],

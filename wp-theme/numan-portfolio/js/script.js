@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = formData.get('message');
 
         // Construct mailto link
-        const mailtoLink = `mailto:hellonumaniftikhar@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+        const mailtoLink = `mailto:me@numaniftikhar.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
         window.location.href = mailtoLink;
 
         // Show feedback

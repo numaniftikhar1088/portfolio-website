@@ -11,7 +11,7 @@
         },
         {
             keywords: ['who', 'about', 'introduce', 'tell me about', 'yourself', 'numan'],
-            response: "Numan Iftikhar is a <strong>Senior Multi-Cloud DevOps Engineer</strong> with 5+ years of experience specializing in Azure, AWS, and Google Cloud Platform. He's a Kubernetes Architect and Terraform Expert focused on building secure, self-healing cloud infrastructures."
+            response: "Numan Iftikhar is a <strong>Senior DevOps, MLOps & AI Platform Engineer</strong> based in Lahore, Pakistan, working worldwide, with 5+ years of experience specializing in Azure, AWS, and Google Cloud Platform. He's a Kubernetes Architect and Terraform Expert who runs his own consultancy, <strong>108 Core Technologies</strong>."
         },
         {
             keywords: ['skill', 'expertise', 'technologies', 'tech stack', 'tools', 'what can you do', 'capable'],
@@ -23,7 +23,7 @@
         },
         {
             keywords: ['certification', 'certified', 'certificate', 'credentials', 'qualifications'],
-            response: "Numan holds <strong>8+ industry certifications</strong>:<br><br>🟢 Google Cloud – Professional Cloud DevOps Engineer<br>🟢 Google Cloud – Professional Cloud Architect<br>🟢 Google Cloud – Associate Cloud Engineer<br>🟠 AWS Solutions Architect – Associate<br>🟠 AWS Developer – Associate<br>🔵 Microsoft Azure Administrator Associate<br>🟣 HashiCorp Terraform Associate<br>🔴 Kaseya Certified – Cybersecurity"
+            response: "Numan holds <strong>7 active certifications</strong>:<br><br>🟢 Google Cloud – Professional Cloud DevOps Engineer<br>🟢 Google Cloud – Professional Cloud Architect<br>🟢 Google Cloud – Associate Cloud Engineer<br>🟠 AWS Solutions Architect – Associate<br>🟠 AWS Developer – Associate<br>🔵 Microsoft Azure Administrator Associate (AZ-104)<br>🟣 HashiCorp Terraform Associate (003)"
         },
         {
             keywords: ['service', 'offer', 'what do you provide', 'help with', 'consulting'],
@@ -35,11 +35,11 @@
         },
         {
             keywords: ['contact', 'reach', 'email', 'phone', 'get in touch', 'connect'],
-            response: "You can reach Numan through:<br><br>📧 <strong>Email:</strong> <a href='mailto:hellonumaniftikhar@gmail.com'>hellonumaniftikhar@gmail.com</a><br>📞 <strong>Phone:</strong> +92 301 000 7414<br>🔗 <strong>LinkedIn:</strong> <a href='https://linkedin.com/in/numaniftikhar' target='_blank'>linkedin.com/in/numaniftikhar</a><br>💻 <strong>GitHub:</strong> <a href='https://github.com/numaniftikhar1088' target='_blank'>github.com/numaniftikhar1088</a><br><br>Or <a href='#book-call' onclick='closeChatAndScroll(\"book-call\")'>book a free call</a>!"
+            response: "You can reach Numan through:<br><br>📧 <strong>Email:</strong> <a href='mailto:me@numaniftikhar.com'>me@numaniftikhar.com</a><br>📞 <strong>Phone:</strong> +92 301 000 7414<br>🔗 <strong>LinkedIn:</strong> <a href='https://linkedin.com/in/numaniftikhar' target='_blank'>linkedin.com/in/numaniftikhar</a><br>💻 <strong>GitHub:</strong> <a href='https://github.com/numaniftikhar1088' target='_blank'>github.com/numaniftikhar1088</a><br>🌐 <strong>Website:</strong> <a href='https://numaniftikhar.com' target='_blank'>numaniftikhar.com</a><br><br>Or <a href='#book-call' onclick='closeChatAndScroll(\"book-call\")'>book a free call</a>!"
         },
         {
             keywords: ['project', 'portfolio', 'case study', 'work sample', 'built'],
-            response: "Numan has worked on impressive projects:<br><br>🏦 <strong>FinGuard</strong> — Multi-Cloud Banking Platform<br>• AWS EKS + GCP GKE, Terraform, ArgoCD, Istio<br>• PCI-DSS & SOC 2 compliant, RPO < 5 min<br><br>🧪 <strong>Lab Management System</strong> — Multi-Tenant SaaS on AKS<br>• HIPAA & ISO 27001 compliant<br>• 99.97% uptime, p99 < 100ms<br>• ~70% cost reduction with KEDA autoscaling<br><br>Check them out in the <a href='#projects' onclick='closeChatAndScroll(\"projects\")'>Projects section</a>!"
+            response: "Numan has worked on impressive projects:<br><br>🏦 <strong>FinGuard</strong> (Reference Architecture) — Multi-Cloud Banking Platform<br>• AWS EKS + GCP GKE, Terraform, ArgoCD, Istio<br>• PCI-DSS & SOC 2 compliant, RPO < 5 min<br><br>🧪 <strong>Lab Management System</strong> (Reference Architecture) — Multi-Tenant Healthcare SaaS on AKS<br>• HIPAA & ISO 27001 compliant<br>• 99.97% uptime, p99 < 100ms<br>• ~70% cost reduction with KEDA autoscaling<br><br>Check them out in the <a href='#projects' onclick='closeChatAndScroll(\"projects\")'>Projects section</a>!"
         },
         {
             keywords: ['kubernetes', 'k8s', 'container', 'docker', 'orchestration', 'aks', 'eks', 'gke'],
@@ -71,7 +71,7 @@
         },
         {
             keywords: ['location', 'where', 'country', 'based', 'timezone'],
-            response: "Numan is based in <strong>Pakistan</strong> and works remotely with clients worldwide. He's experienced in collaborating across timezones with teams in <strong>Canada, the United States</strong>, and globally."
+            response: "Numan is based in <strong>Lahore, Pakistan</strong> and works remotely with clients worldwide. He's experienced in collaborating across timezones with teams in <strong>Canada, the United States</strong>, and globally."
         },
         {
             keywords: ['language', 'speak', 'english', 'urdu'],
@@ -79,7 +79,7 @@
         },
         {
             keywords: ['rate', 'price', 'cost', 'charge', 'budget', 'pricing', 'how much'],
-            response: "Numan offers competitive rates based on project scope and duration. For a detailed quote, you can:<br><br>📅 <a href='#book-call' onclick='closeChatAndScroll(\"book-call\")'>Book a free 30-minute consultation</a><br>📧 Email: <a href='mailto:hellonumaniftikhar@gmail.com'>hellonumaniftikhar@gmail.com</a><br><br>The initial consultation is <strong>100% free</strong> with no obligations!"
+            response: "Numan offers competitive rates based on project scope and duration. For a detailed quote, you can:<br><br>📅 <a href='#book-call' onclick='closeChatAndScroll(\"book-call\")'>Book a free 30-minute consultation</a><br>📧 Email: <a href='mailto:me@numaniftikhar.com'>me@numaniftikhar.com</a><br><br>The initial consultation is <strong>100% free</strong> with no obligations!"
         },
         {
             keywords: ['resume', 'cv', 'download'],

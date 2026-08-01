@@ -3,15 +3,27 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Numan Iftikhar - Senior DevOps, MLOps & AI Platform Engineer | Kubernetes Architect | Terraform Expert">
-    <meta name="keywords" content="DevOps Engineer, AI Platform Engineer, MLOps Engineer, Cloud Architect, Kubernetes, Terraform, Azure, AWS, GCP">
+    <meta name="description" content="Numan Iftikhar - Senior DevOps, MLOps & AI Platform Engineer | Multi-cloud infrastructure (Azure, AWS, GCP), Kubernetes platforms, and production LLM/RAG systems">
+    <meta name="keywords" content="DevOps Engineer, AI Platform Engineer, MLOps Engineer, LLMOps, Cloud Architect, Kubernetes, Terraform, Azure, AWS, GCP, RAG, Data Engineering, GenAI">
     <meta name="author" content="Numan Iftikhar">
-    
+    <title>Numan Iftikhar | Senior DevOps, MLOps & AI Platform Engineer</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Numan Iftikhar | Senior DevOps, MLOps & AI Platform Engineer">
+    <meta property="og:description" content="I design Kubernetes platforms, ship them with Terraform, and build the LLM systems on top &mdash; for teams that need production software to be reliable, secure, and defensible.">
+    <meta property="og:url" content="https://numaniftikhar.com">
+    <meta property="og:image" content="images/profile.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Numan Iftikhar | Senior DevOps, MLOps & AI Platform Engineer">
+    <meta name="twitter:description" content="I design Kubernetes platforms, ship them with Terraform, and build the LLM systems on top &mdash; for teams that need production software to be reliable, secure, and defensible.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
-    
-    
 </head>
 <body <?php body_class(); ?>>
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgress"></div>
+
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader">
@@ -29,6 +41,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#hero" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Work</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
@@ -106,25 +119,20 @@
                     <a href="https://github.com/numaniftikhar1088" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://numaniftikhar.com" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-globe"></i></a>
                     <a href="mailto:me@numaniftikhar.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-
                 </div>
             </div>
             <div class="hero-visual animate-fade-up delay-3">
                 <div class="hero-image-wrapper">
-                    <div class="hero-image-border"></div>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/profile.png" alt="Numan Iftikhar - Senior DevOps, MLOps & AI Platform Engineer" class="hero-profile-img">
+                    <span class="hero-image-corner corner-tl"></span>
+                    <span class="hero-image-corner corner-br"></span>
                 </div>
-                <div class="floating-badge badge-1">
-                    <i class="fab fa-aws"></i> AWS
-                </div>
-                <div class="floating-badge badge-2">
-                    <i class="fab fa-microsoft"></i> Azure
-                </div>
-                <div class="floating-badge badge-3">
-                    <i class="fab fa-google"></i> GCP
-                </div>
-                <div class="floating-badge badge-4">
-                    <i class="fab fa-docker"></i> K8s
+                <div class="hero-stack-strip">
+                    <span class="stack-prompt">stack</span><span class="stack-sep">:</span>
+                    <span class="stack-item"><i class="fab fa-aws"></i>AWS</span>
+                    <span class="stack-item"><i class="fab fa-microsoft"></i>Azure</span>
+                    <span class="stack-item"><i class="fab fa-google"></i>GCP</span>
+                    <span class="stack-item"><i class="fas fa-dharmachakra"></i>K8s</span>
                 </div>
             </div>
         </div>
@@ -140,15 +148,33 @@
     <div id="trusted-by">
         <div class="container">
             <p class="trusted-label">Trusted Technologies</p>
-            <div class="trusted-logos">
-                <div class="trusted-item"><i class="fab fa-aws"></i><span>AWS</span></div>
-                <div class="trusted-item"><i class="fab fa-microsoft"></i><span>Azure</span></div>
-                <div class="trusted-item"><i class="fab fa-google"></i><span>GCP</span></div>
-                <div class="trusted-item"><i class="fab fa-docker"></i><span>Docker</span></div>
-                <div class="trusted-item"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
-                <div class="trusted-item"><i class="fas fa-code-branch"></i><span>Terraform</span></div>
-                <div class="trusted-item"><i class="fab fa-jenkins"></i><span>Jenkins</span></div>
-                <div class="trusted-item"><i class="fab fa-github"></i><span>GitHub Actions</span></div>
+        </div>
+        <div class="trusted-marquee">
+            <div class="trusted-track">
+                <div class="trusted-logos">
+                    <div class="trusted-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+                    <div class="trusted-item"><i class="fab fa-microsoft"></i><span>Azure</span></div>
+                    <div class="trusted-item"><i class="fab fa-google"></i><span>GCP</span></div>
+                    <div class="trusted-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+                    <div class="trusted-item"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
+                    <div class="trusted-item"><i class="fas fa-code-branch"></i><span>Terraform</span></div>
+                    <div class="trusted-item"><i class="fab fa-jenkins"></i><span>Jenkins</span></div>
+                    <div class="trusted-item"><i class="fab fa-github"></i><span>GitHub Actions</span></div>
+                    <div class="trusted-item"><i class="fas fa-bolt"></i><span>FastAPI</span></div>
+                    <div class="trusted-item"><i class="fas fa-robot"></i><span>Claude API</span></div>
+                </div>
+                <div class="trusted-logos" aria-hidden="true">
+                    <div class="trusted-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+                    <div class="trusted-item"><i class="fab fa-microsoft"></i><span>Azure</span></div>
+                    <div class="trusted-item"><i class="fab fa-google"></i><span>GCP</span></div>
+                    <div class="trusted-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+                    <div class="trusted-item"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
+                    <div class="trusted-item"><i class="fas fa-code-branch"></i><span>Terraform</span></div>
+                    <div class="trusted-item"><i class="fab fa-jenkins"></i><span>Jenkins</span></div>
+                    <div class="trusted-item"><i class="fab fa-github"></i><span>GitHub Actions</span></div>
+                    <div class="trusted-item"><i class="fas fa-bolt"></i><span>FastAPI</span></div>
+                    <div class="trusted-item"><i class="fas fa-robot"></i><span>Claude API</span></div>
+                </div>
             </div>
         </div>
     </div>
@@ -170,13 +196,18 @@
                         &mdash; for teams that need production software to be reliable, secure, and defensible.
                     </p>
                     <p>
-                        With <strong>5+ years of experience</strong> specializing in Azure, AWS, and Google Cloud Platform,
+                        With <strong>5+ years of experience</strong> across Azure (primary), AWS, and Google Cloud Platform,
                         I am a Kubernetes Architect and IaC Expert with deep expertise in designing, deploying, and managing
-                        enterprise-grade cloud infrastructure across hybrid and multi-cloud environments.
+                        enterprise-grade cloud infrastructure across hybrid and multi-cloud environments &mdash; delivered
+                        in regulated environments spanning PCI-DSS, SOC 2, HIPAA, and ISO 27001.
                     </p>
                     <p>
-                        I run this practice through my consultancy, <strong>108 Core Technologies</strong>, and I'm
-                        currently open to senior DevOps, SRE, and AI Platform roles.
+                        I've extended that same production discipline into AI systems &mdash; RAG pipelines, local and
+                        hosted LLM serving, and agentic workflows built to run in production, not just demo &mdash;
+                        and into the data engineering plumbing (ingestion, embedding, API services) that makes models
+                        and reporting actually usable. I run this practice through my consultancy,
+                        <strong>108 Core Technologies</strong>, and I'm currently open to senior DevOps, SRE, and AI
+                        Platform roles.
                     </p>
                     <div class="about-stats">
                         <div class="stat-card">
@@ -250,6 +281,71 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Practice Areas</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">A multi-cloud infrastructure foundation, extended into AI systems and the data engineering that supports them</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>Cloud & DevOps Engineering</h3>
+                    </div>
+                    <p class="skill-card-desc">Production Kubernetes on AKS, infrastructure as code with Terraform, and CI/CD pipelines through Azure DevOps and GitHub Actions. Observability with Prometheus and Grafana. Delivered in regulated environments (PCI-DSS, SOC 2, HIPAA, ISO 27001).</p>
+                    <div class="skill-tags">
+                        <span>AKS</span><span>Terraform</span><span>Azure DevOps</span>
+                        <span>Prometheus</span><span>Grafana</span>
+                    </div>
+                </div>
+                <div class="skill-card ai">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI Engineering & LLMOps</h3>
+                    </div>
+                    <p class="skill-card-desc">RAG pipelines, local and hosted LLM serving, and agentic workflows. Built to run in production, not just demo.</p>
+                    <div class="skill-tags">
+                        <span>Ollama</span><span>Qdrant</span><span>ChromaDB</span>
+                        <span>FastAPI</span><span>LangGraph</span><span>Claude API</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                        <h3>Data Engineering</h3>
+                    </div>
+                    <p class="skill-card-desc">Ingestion, embedding, and API services in Python &mdash; the plumbing that makes models and reporting actually usable.</p>
+                    <div class="skill-tags">
+                        <span>Python</span><span>FastAPI</span><span>ETL Pipelines</span><span>Cloud Pricing APIs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-explore">
+                <i class="fas fa-flask"></i>
+                <p><strong>Currently building depth in:</strong> vLLM & model serving, fine-tuning (LoRA/PEFT), GPU scheduling, distributed training, and LLM eval/observability tooling (Langfuse, RAGAS/DeepEval) &mdash; hands-on learning, not yet production experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MLOps Focus Banner -->
+    <section id="mlops-focus">
+        <div class="container">
+            <div class="mlops-focus-content">
+                <span class="section-tag">&lt;mlops&gt;</span>
+                <h2>The Production Layer AI Needs</h2>
+                <p>
+                    I bring the production layer AI needs &mdash; eval-gated CI/CD, LLM observability
+                    (token/cost/latency tracing), guardrails, autoscaling for inference, and FinOps &mdash;
+                    on top of a strong Kubernetes/Terraform foundation.
+                </p>
             </div>
         </div>
     </section>
@@ -534,6 +630,73 @@
                 <div class="section-line"></div>
             </div>
             <div class="projects-grid">
+                <!-- Private RAG Pipeline Project -->
+                <div class="project-card flagship">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-brain"></i></div>
+                        <div class="project-links">
+                            <span class="project-link" title="Personal project"><i class="fas fa-robot"></i></span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Private RAG Pipeline <span class="flagship-tag">Flagship</span></h3>
+                    <p class="project-subtitle">AI / LLMOps &mdash; Retrieval-Augmented Generation for Data That Can't Leave the Perimeter</p>
+                    <div class="project-tech-stack">
+                        <span>Ollama</span><span>Qdrant</span><span>FastAPI</span><span>Claude API</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Built a retrieval-augmented generation stack for teams whose data can't leave their perimeter,
+                            with local <strong>Ollama</strong> inference and a <strong>Qdrant</strong> vector store.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Served through a <strong>FastAPI</strong> service layer with clear ingestion, retrieval, and
+                            generation boundaries, and the <strong>Claude API</strong> wired in as an optional escalation path.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Dockerized for Kubernetes, applying the same production discipline as my infra work &mdash;
+                            containerized services, not a notebook prototype.
+                        </li>
+                    </ul>
+                    <div class="project-badges">
+                        <span class="badge badge-ai"><i class="fas fa-brain"></i> RAG</span>
+                        <span class="badge badge-ai"><i class="fas fa-robot"></i> LLM</span>
+                        <span class="badge badge-cloud"><i class="fas fa-docker"></i> Dockerized</span>
+                    </div>
+                </div>
+
+                <!-- Cloud Cost Estimator Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-calculator"></i></div>
+                        <div class="project-links">
+                            <span class="project-link" title="Personal project"><i class="fas fa-robot"></i></span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Cloud Cost Estimator</h3>
+                    <p class="project-subtitle">FinOps &mdash; LLM-Assisted Architecture Pricing</p>
+                    <div class="project-tech-stack">
+                        <span>Python</span><span>Azure Pricing API</span><span>LLM Tooling</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            An <strong>LLM interprets an architecture description</strong> and identifies the resources
+                            it implies, then <strong>Python prices them</strong> against the live Azure Retail Prices API.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Language models for reasoning, code for accuracy &mdash; the LLM never touches the arithmetic.
+                        </li>
+                    </ul>
+                    <div class="project-badges">
+                        <span class="badge badge-ai"><i class="fas fa-robot"></i> LLM</span>
+                        <span class="badge badge-cloud"><i class="fas fa-cloud"></i> FinOps</span>
+                    </div>
+                </div>
+
                 <!-- FinGuard Project -->
                 <div class="project-card">
                     <div class="project-header">
@@ -619,6 +782,10 @@
                             <i class="fas fa-check-circle"></i>
                             Provisioned full infrastructure with Terraform (AKS, Azure SQL, Redis, Cosmos DB, Blob Storage) and deployed via Helm + ArgoCD GitOps pipeline with blue/green canary strategy.
                         </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            The same event-driven, scale-to-zero pattern (KEDA + Spot nodes) that inference workloads need &mdash; elastic capacity that follows real demand instead of idling on fixed nodes.
+                        </li>
                     </ul>
                     <div class="project-badges">
                         <span class="badge badge-security"><i class="fas fa-shield-halved"></i> HIPAA</span>
@@ -626,6 +793,92 @@
                         <span class="badge badge-perf"><i class="fas fa-bolt"></i> &lt;100ms p99</span>
                         <span class="badge badge-uptime"><i class="fas fa-arrow-up"></i> 99.97%</span>
                     </div>
+                </div>
+
+                <!-- Production AKS + VPN + VoIP Project -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="project-links">
+                            <span class="project-link" title="Confidential client project"><i class="fas fa-lock"></i></span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Secure Hybrid VoIP Platform</h3>
+                    <p class="project-subtitle">Telecom &mdash; Hybrid Cloud Infrastructure &amp; VoIP (Dubai)</p>
+                    <div class="project-tech-stack">
+                        <span>Azure AKS</span><span>Terraform</span><span>Azure DevOps</span>
+                        <span>Site-to-Site IPSec VPN</span><span>FreeSwitch VoIP</span>
+                        <span>NSGs</span><span>K8s NetworkPolicies</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Architected production AKS infrastructure connected to on-premises systems in Dubai via an
+                            <strong>Azure Site-to-Site IPSec VPN</strong>, provisioned entirely with Terraform and Azure DevOps.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Deployed and operated a <strong>FreeSwitch VoIP</strong> stack alongside the Kubernetes workloads over the hybrid link.
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            Enforced defense-in-depth network segmentation with <strong>NSGs</strong> at the Azure network layer and
+                            <strong>Kubernetes NetworkPolicies</strong> at the pod layer.
+                        </li>
+                    </ul>
+                    <div class="project-badges">
+                        <span class="badge badge-cloud"><i class="fas fa-cloud"></i> Hybrid Cloud</span>
+                        <span class="badge badge-security"><i class="fas fa-shield-halved"></i> Network Isolation</span>
+                        <span class="badge badge-gitops"><i class="fas fa-code-branch"></i> IaC</span>
+                    </div>
+                </div>
+
+                <!-- 108 Core Technologies -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-building"></i></div>
+                        <div class="project-links">
+                            <a href="https://numaniftikhar.com" target="_blank" rel="noopener" class="project-link" aria-label="Visit website">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">108 Core Technologies</h3>
+                    <p class="project-subtitle">Consultancy</p>
+                    <ul class="project-details">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            My consultancy &mdash; cloud and AI engineering for SMEs, with direct client ownership and no handoffs.
+                        </li>
+                    </ul>
+                    <div class="project-badges">
+                        <span class="badge badge-cloud"><i class="fas fa-cloud"></i> Cloud</span>
+                        <span class="badge badge-ai"><i class="fas fa-robot"></i> AI Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- In Progress / Roadmap Section -->
+    <section id="roadmap">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;roadmap&gt;</span>
+                <h2 class="section-title">In Progress / Roadmap</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">What I'm actively building depth in next &mdash; not yet shipped to production</p>
+            </div>
+            <div class="roadmap-grid">
+                <div class="roadmap-card">
+                    <span class="roadmap-status"><i class="fas fa-flask"></i> Learning</span>
+                    <h4>LLM Serving & Fine-Tuning Lab</h4>
+                    <p>Hands-on lab exploring vLLM for model serving and fine-tuning with LoRA/PEFT.</p>
+                </div>
+                <div class="roadmap-card">
+                    <span class="roadmap-status"><i class="fas fa-flask"></i> Learning</span>
+                    <h4>GPU Scheduling & Distributed Training</h4>
+                    <p>Deepening my Kubernetes background into GPU-aware scheduling and distributed training workloads.</p>
                 </div>
             </div>
         </div>
@@ -669,6 +922,16 @@
                     <div class="why-icon"><i class="fas fa-handshake"></i></div>
                     <h4>Long-Term Partner</h4>
                     <p>I don't just deploy and disappear. I provide knowledge transfer, documentation, and ongoing support.</p>
+                </div>
+            </div>
+            <div class="hire-banner-content">
+                <div class="hire-text">
+                    <h3>Ready to Level Up Your Infrastructure?</h3>
+                    <p>Whether you need a full-time remote DevOps engineer or a freelance cloud architect for your next project &mdash; let's build something great together.</p>
+                </div>
+                <div class="hire-actions">
+                    <a href="#book-call" class="btn btn-accent btn-lg"><i class="fas fa-calendar-check"></i> Book Free Consultation</a>
+                    <a href="https://linkedin.com/in/numaniftikhar" target="_blank" rel="noopener" class="btn btn-outline btn-lg"><i class="fab fa-linkedin-in"></i> Connect on LinkedIn</a>
                 </div>
             </div>
         </div>
@@ -726,23 +989,6 @@
             <div class="testimonials-cta">
                 <p>Want to be my next success story?</p>
                 <a href="#book-call" class="btn btn-accent btn-lg"><i class="fas fa-calendar-check"></i> Book a Free Call</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hire Me CTA Banner -->
-    <section id="hire-banner">
-        <div class="container">
-            <div class="hire-banner-content">
-                <div class="hire-text">
-                    <h2>Ready to Level Up Your Infrastructure?</h2>
-                    <p>Whether you need a full-time remote DevOps engineer or a freelance cloud architect for your next project &mdash; let's build something great together.</p>
-                </div>
-                <div class="hire-actions">
-                    <a href="#book-call" class="btn btn-accent btn-lg"><i class="fas fa-calendar-check"></i> Book Free Consultation</a>
-
-                    <a href="https://linkedin.com/in/numaniftikhar" target="_blank" rel="noopener" class="btn btn-outline btn-lg"><i class="fab fa-linkedin-in"></i> Connect on LinkedIn</a>
-                </div>
             </div>
         </div>
     </section>
@@ -898,7 +1144,7 @@
                 <div class="booking-form-wrapper">
                     <div class="calendly-embed-wrapper">
                         <!-- Replace YOUR_CALENDLY_USERNAME with your actual Calendly username -->
-                        <div class="calendly-inline-widget" data-url="https://calendly.com/hellonumaniftikhar/30min?hide_gdpr_banner=1&background_color=111827&text_color=f1f5f9&primary_color=2563eb" style="min-width:320px;height:580px;"></div>
+                        <div class="calendly-inline-widget" data-url="https://calendly.com/hellonumaniftikhar/30min?hide_gdpr_banner=1&background_color=161616&text_color=e5e5e5&primary_color=6366f1" style="min-width:320px;height:580px;"></div>
                         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                     </div>
                     <p class="booking-note"><i class="fas fa-shield-halved"></i> Powered by Calendly. Pick a time that works for you &mdash; confirmation is instant.</p>
@@ -997,46 +1243,6 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <!-- AI Chatbot Widget -->
-    <div class="chatbot-widget" id="chatbot">
-        <div class="chatbot-window" id="chatWindow">
-            <div class="chatbot-header">
-                <div class="chatbot-header-info">
-                    <div class="chatbot-avatar-sm"><i class="fas fa-headset"></i></div>
-                    <div>
-                        <h4>Numan's AI Assistant</h4>
-                        <span class="chatbot-status"><span class="status-dot"></span> Online</span>
-                    </div>
-                </div>
-                <button class="chatbot-close" id="chatClose" aria-label="Close chat"><i class="fas fa-times"></i></button>
-            </div>
-            <div class="chatbot-messages" id="chatMessages">
-                <div class="chat-message bot">
-                    <div class="chat-bubble">
-                        Hi there! I'm Numan's AI assistant. I can answer questions about his skills, experience, certifications, services, and availability. How can I help you?
-                    </div>
-                </div>
-                <div class="chat-suggestions" id="chatSuggestions">
-                    <button class="suggestion-btn" data-q="What skills do you have?">Skills & Expertise</button>
-                    <button class="suggestion-btn" data-q="What certifications do you hold?">Certifications</button>
-                    <button class="suggestion-btn" data-q="What services do you offer?">Services</button>
-                    <button class="suggestion-btn" data-q="Are you available for hire?">Availability</button>
-                    <button class="suggestion-btn" data-q="How can I contact you?">Contact Info</button>
-                </div>
-            </div>
-            <div class="chatbot-input">
-                <input type="text" id="chatInput" placeholder="Ask me anything..." autocomplete="off">
-                <button id="chatSend" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
-            </div>
-        </div>
-        <button class="chatbot-toggle" id="chatToggle" aria-label="Open chat">
-            <i class="fas fa-headset" id="chatIconOpen"></i>
-            <i class="fas fa-times" id="chatIconClose" style="display:none;"></i>
-            <span class="chatbot-badge">1</span>
-        </button>
-    </div>
-
-    
     <?php wp_footer(); ?>
 </body>
 </html>

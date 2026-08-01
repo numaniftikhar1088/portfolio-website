@@ -59,27 +59,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     typeEffect();
 
-    // --- Navbar Scroll Effect ---
+    // --- Optimized Throttled Scroll Handler ---
     const navbar = document.getElementById('navbar');
     const backToTop = document.getElementById('backToTop');
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-links a');
+    const scrollProgress = document.getElementById('scrollProgress');
 
-    window.addEventListener('scroll', () => {
+    let isScrolling = false;
+    function handleScroll() {
         const scrollY = window.scrollY;
 
         // Navbar background
-        if (scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
+        if (navbar) {
+            if (scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         }
 
         // Back to top button
-        if (scrollY > 400) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
+        if (backToTop) {
+            if (scrollY > 400) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
         }
 
         // Active nav link on scroll
@@ -97,7 +103,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.classList.add('active');
             }
         });
-    });
+
+        // Scroll progress bar
+        if (scrollProgress) {
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const pct = docHeight > 0 ? (scrollY / docHeight) * 100 : 0;
+            scrollProgress.style.width = pct + '%';
+        }
+
+        isScrolling = false;
+    }
+
+    window.addEventListener('scroll', () => {
+        if (!isScrolling) {
+            window.requestAnimationFrame(handleScroll);
+            isScrolling = true;
+        }
+    }, { passive: true });
 
     // --- Reveal Animations on Scroll ---
     const revealTargets = document.querySelectorAll('.service-card, .cert-card, .timeline-item, .contact-card, .education-card, .stat-card, .info-card, .project-card, .why-card, .testimonial-card, .process-step, .blog-card, .skill-card, .roadmap-card, .section-header');
@@ -118,18 +140,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.getElementById('hamburger');
     const navLinksContainer = document.getElementById('navLinks');
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navLinksContainer.classList.toggle('open');
-    });
-
-    // Close menu on link click
-    navLinksContainer.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navLinksContainer.classList.remove('open');
+    if (hamburger && navLinksContainer) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinksContainer.classList.toggle('open');
         });
-    });
+
+        navLinksContainer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinksContainer.classList.remove('open');
+            });
+        });
+    }
 
     // --- Smooth Scroll ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -170,56 +193,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Trigger counter animation when about section is visible
     const aboutSection = document.getElementById('about');
-    const aboutObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !countersAnimated) {
-                countersAnimated = true;
-                animateCounters();
-            }
-        });
-    }, { threshold: 0.3 });
+    if (aboutSection) {
+        const aboutObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !countersAnimated) {
+                    countersAnimated = true;
+                    animateCounters();
+                }
+            });
+        }, { threshold: 0.3 });
 
-    aboutObserver.observe(aboutSection);
-
-    // --- Particles ---
-    const particlesContainer = document.getElementById('particles');
-    for (let i = 0; i < 30; i++) {
-        const particle = document.createElement('div');
-        particle.classList.add('particle');
-        particle.style.left = Math.random() * 100 + '%';
-        particle.style.top = Math.random() * 100 + '%';
-        particle.style.animationDelay = Math.random() * 6 + 's';
-        particle.style.animationDuration = (4 + Math.random() * 4) + 's';
-        particlesContainer.appendChild(particle);
+        aboutObserver.observe(aboutSection);
     }
+
+    // --- Particles disabled for performance ---
 
     // --- Contact Form ---
     const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
 
-        const formData = new FormData(contactForm);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const subject = formData.get('subject');
-        const message = formData.get('message');
+            const formData = new FormData(contactForm);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
 
-        // Construct mailto link
-        const mailtoLink = `mailto:me@numaniftikhar.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
-        window.location.href = mailtoLink;
+            const mailtoLink = `mailto:me@numaniftikhar.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+            window.location.href = mailtoLink;
 
-        // Show feedback
-        const btn = contactForm.querySelector('button[type="submit"]');
-        const originalText = btn.innerHTML;
-        btn.innerHTML = '<i class="fas fa-check"></i> Opening Email Client...';
-        btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+            const btn = contactForm.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check"></i> Opening Email Client...';
+            btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
 
-        setTimeout(() => {
-            btn.innerHTML = originalText;
-            btn.style.background = '';
-            contactForm.reset();
-        }, 3000);
-    });
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = '';
+                contactForm.reset();
+            }, 3000);
+        });
+    }
 
     // --- Architecture Diagram Modal ---
     const archModal = document.createElement('div');
@@ -239,11 +254,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    archModalClose.addEventListener('click', (e) => {
-        e.stopPropagation();
-        archModal.classList.remove('active');
-        document.body.style.overflow = '';
-    });
+    if (archModalClose) {
+        archModalClose.addEventListener('click', (e) => {
+            e.stopPropagation();
+            archModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    }
 
     archModal.addEventListener('click', () => {
         archModal.classList.remove('active');
@@ -257,36 +274,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Scroll Progress Bar ---
-    const scrollProgress = document.getElementById('scrollProgress');
-    if (scrollProgress) {
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-            scrollProgress.style.width = pct + '%';
-        });
-    }
-
-    // --- Project Card Tilt Effect ---
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-
-    if (!prefersReducedMotion && supportsHover) {
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('mousemove', (e) => {
-                const rect = card.getBoundingClientRect();
-                const x = (e.clientX - rect.left) / rect.width - 0.5;
-                const y = (e.clientY - rect.top) / rect.height - 0.5;
-                card.style.setProperty('--rx', (x * 8) + 'deg');
-                card.style.setProperty('--ry', (y * -8) + 'deg');
-            });
-
-            card.addEventListener('mouseleave', () => {
-                card.style.setProperty('--rx', '0deg');
-                card.style.setProperty('--ry', '0deg');
-            });
-        });
-    }
+});
 
 });

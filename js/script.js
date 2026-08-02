@@ -5,61 +5,19 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Preloader ---
+    // --- Preloader (Instant Hide) ---
     const preloader = document.getElementById('preloader');
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.classList.add('hidden');
-        }, 500);
-    });
-
-    // Fallback: hide preloader after 3s
-    setTimeout(() => {
+    if (preloader) {
         preloader.classList.add('hidden');
-    }, 3000);
-
-    // --- Typed Text Effect ---
-    const typedElement = document.getElementById('typedText');
-    const words = [
-        'DevOps, MLOps & AI Platform Engineer',
-        'Multi-Cloud DevOps Engineer',
-        'Kubernetes Architect',
-        'LLM/RAG Systems Engineer',
-        'Terraform Expert',
-        'AI Platform Engineer'
-    ];
-    let wordIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-
-    function typeEffect() {
-        const currentWord = words[wordIndex];
-
-        if (isDeleting) {
-            typedElement.textContent = currentWord.substring(0, charIndex - 1);
-            charIndex--;
-        } else {
-            typedElement.textContent = currentWord.substring(0, charIndex + 1);
-            charIndex++;
-        }
-
-        let speed = isDeleting ? 30 : 60;
-
-        if (!isDeleting && charIndex === currentWord.length) {
-            speed = 2000; // Pause at end
-            isDeleting = true;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            wordIndex = (wordIndex + 1) % words.length;
-            speed = 300;
-        }
-
-        setTimeout(typeEffect, speed);
     }
 
-    typeEffect();
+    // --- Static Header Title (No Typing Loop) ---
+    const typedElement = document.getElementById('typedText');
+    if (typedElement) {
+        typedElement.textContent = 'DevOps, MLOps & AI Platform Engineer';
+    }
 
-    // --- Optimized Throttled Scroll Handler ---
+    // --- Optimized Scroll Handler ---
     const navbar = document.getElementById('navbar');
     const backToTop = document.getElementById('backToTop');
     const sections = document.querySelectorAll('section');
@@ -70,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleScroll() {
         const scrollY = window.scrollY;
 
-        // Navbar background
         if (navbar) {
             if (scrollY > 50) {
                 navbar.classList.add('scrolled');
@@ -79,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // Back to top button
         if (backToTop) {
             if (scrollY > 400) {
                 backToTop.classList.add('visible');
@@ -88,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // Active nav link on scroll
         let current = '';
         sections.forEach(section => {
             const sectionTop = section.offsetTop - 120;
@@ -104,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Scroll progress bar
         if (scrollProgress) {
             const docHeight = document.documentElement.scrollHeight - window.innerHeight;
             const pct = docHeight > 0 ? (scrollY / docHeight) * 100 : 0;
@@ -121,20 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, { passive: true });
 
-    // --- Reveal Animations on Scroll ---
+    // --- Instant Reveal (No Animation) ---
     const revealTargets = document.querySelectorAll('.service-card, .cert-card, .timeline-item, .contact-card, .education-card, .stat-card, .info-card, .project-card, .why-card, .testimonial-card, .process-step, .blog-card, .skill-card, .roadmap-card, .section-header');
-    revealTargets.forEach(el => el.classList.add('reveal'));
-
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
-
-    revealTargets.forEach(el => revealObserver.observe(el));
+    revealTargets.forEach(el => el.classList.add('reveal', 'active'));
 
     // --- Mobile Menu ---
     const hamburger = document.getElementById('hamburger');
@@ -165,48 +108,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Counter Animation ---
+    // --- Direct Counter Output (No Count-up Step Loop) ---
     const counters = document.querySelectorAll('.stat-number');
-    let countersAnimated = false;
-
-    function animateCounters() {
-        counters.forEach(counter => {
-            const target = +counter.getAttribute('data-count');
-            const duration = 1500;
-            const step = target / (duration / 16);
-            let current = 0;
-
-            const updateCounter = () => {
-                current += step;
-                if (current < target) {
-                    counter.textContent = Math.ceil(current);
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    counter.textContent = target;
-                    counter.classList.add('counted');
-                }
-            };
-
-            updateCounter();
-        });
-    }
-
-    // Trigger counter animation when about section is visible
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-        const aboutObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !countersAnimated) {
-                    countersAnimated = true;
-                    animateCounters();
-                }
-            });
-        }, { threshold: 0.3 });
-
-        aboutObserver.observe(aboutSection);
-    }
-
-    // --- Particles disabled for performance ---
+    counters.forEach(counter => {
+        const target = counter.getAttribute('data-count');
+        if (target) {
+            counter.textContent = target;
+            counter.classList.add('counted');
+        }
+    });
 
     // --- Contact Form ---
     const contactForm = document.getElementById('contactForm');

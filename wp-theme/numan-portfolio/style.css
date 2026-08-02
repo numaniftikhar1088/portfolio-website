@@ -60,7 +60,6 @@ Text Domain: numan-portfolio
 }
 
 html {
-    scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
 
@@ -470,14 +469,7 @@ ul, ol { list-style: none; }
 }
 
 .typed-cursor {
-    color: var(--accent);
-    font-weight: 300;
-    animation: blink-cursor 0.8s infinite;
-}
-
-@keyframes blink-cursor {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+    display: none;
 }
 
 .hero-description {
@@ -670,30 +662,19 @@ ul, ol { list-style: none; }
 
 /* --- Animation Classes --- */
 .animate-fade-up {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 0.7s ease forwards;
-}
-
-.delay-1 { animation-delay: 0.1s; }
-.delay-2 { animation-delay: 0.15s; }
-.delay-3 { animation-delay: 0.2s; }
-.delay-4 { animation-delay: 0.3s; }
-.delay-5 { animation-delay: 0.4s; }
-
-@keyframes fadeUp {
-    to { opacity: 1; transform: translateY(0); }
+    opacity: 1;
+    transform: none;
 }
 
 .reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.35s ease, transform 0.35s ease;
+    opacity: 1;
+    transform: none;
+    transition: none;
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 
 /* Staggered reveal for grid items */

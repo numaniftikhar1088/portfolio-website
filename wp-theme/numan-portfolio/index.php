@@ -153,18 +153,6 @@
                     <div class="trusted-item"><i class="fas fa-bolt"></i><span>FastAPI</span></div>
                     <div class="trusted-item"><i class="fas fa-robot"></i><span>Claude API</span></div>
                 </div>
-                <div class="trusted-logos" aria-hidden="true">
-                    <div class="trusted-item"><i class="fab fa-aws"></i><span>AWS</span></div>
-                    <div class="trusted-item"><i class="fab fa-microsoft"></i><span>Azure</span></div>
-                    <div class="trusted-item"><i class="fab fa-google"></i><span>GCP</span></div>
-                    <div class="trusted-item"><i class="fab fa-docker"></i><span>Docker</span></div>
-                    <div class="trusted-item"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
-                    <div class="trusted-item"><i class="fas fa-code-branch"></i><span>Terraform</span></div>
-                    <div class="trusted-item"><i class="fab fa-jenkins"></i><span>Jenkins</span></div>
-                    <div class="trusted-item"><i class="fab fa-github"></i><span>GitHub Actions</span></div>
-                    <div class="trusted-item"><i class="fas fa-bolt"></i><span>FastAPI</span></div>
-                    <div class="trusted-item"><i class="fas fa-robot"></i><span>Claude API</span></div>
-                </div>
             </div>
         </div>
     </div>

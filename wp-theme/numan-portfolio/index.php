@@ -21,16 +21,6 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <!-- Scroll Progress Bar -->
-    <div id="scrollProgress"></div>
-
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader">
-            <div class="loader-ring"></div>
-            <span class="loader-text">NI</span>
-        </div>
-    </div>
 
     <!-- Navigation -->
     <nav id="navbar">
